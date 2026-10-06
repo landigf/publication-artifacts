@@ -1,0 +1,74 @@
+{
+  "candidate_combinations": [
+    {
+      "candidate_steps": [
+        "c_parse"
+      ],
+      "decision_set_context_counts": {
+        "approve,escalate": 71,
+        "escalate": 18,
+        "reject": 134
+      },
+      "distinct_fixed_contexts": 223,
+      "production_witness_evaluations": 132016,
+      "richer_grid_evaluations": 4364556
+    },
+    {
+      "candidate_steps": [
+        "c_justify"
+      ],
+      "decision_set_context_counts": {
+        "approve": 41,
+        "approve,escalate": 92,
+        "escalate": 659,
+        "reject": 375
+      },
+      "distinct_fixed_contexts": 1167,
+      "production_witness_evaluations": 2334,
+      "richer_grid_evaluations": 2334
+    },
+    {
+      "candidate_steps": [
+        "c_parse",
+        "c_justify"
+      ],
+      "decision_set_context_counts": {
+        "approve,escalate": 39,
+        "escalate": 9,
+        "reject": 103
+      },
+      "distinct_fixed_contexts": 151,
+      "production_witness_evaluations": 178784,
+      "richer_grid_evaluations": 5910744
+    }
+  ],
+  "memoized_contexts_tested": 1541,
+  "numeric_domain": {
+    "assumed_domain": "finite nonnegative amount and budget_remaining",
+    "schema_valid_numeric_fields_checked": 10052,
+    "violations": 0
+  },
+  "parse_reference_grid_records": 19572,
+  "reference_grid": "Seven category classes including unknown; all four compliance Boolean pairs; budget anchors at zero, one, and .01/.2/.25/.5/.9/1/1.1/2/10 times the category ceiling; amounts at zero, one, budget, ceiling, .25/.9/.5 of the binding threshold, and beyond both. Each anchor includes adjacent representable floating-point values below and above when finite/nonnegative. justification_adequate varies jointly for both-step candidates.",
+  "schema_version": 1,
+  "scope": "All retained canonical/repeated/perturbed chain rows with both feeding records valid; memoized fixed consumer contexts after removing the two separately tested decision-inert fields. Three candidate-step combinations. Finite regression evidence for the frozen policy and workload, not a general formal completeness proof.",
+  "status": "passed",
+  "sweeps": [
+    {
+      "both_feeding_records_valid_rows": 1739,
+      "schema_valid_numeric_fields": 3478,
+      "sweep": "results-chain-deepseek"
+    },
+    {
+      "both_feeding_records_valid_rows": 1744,
+      "schema_valid_numeric_fields": 3488,
+      "sweep": "results-chain-gemma3"
+    },
+    {
+      "both_feeding_records_valid_rows": 1538,
+      "schema_valid_numeric_fields": 3086,
+      "sweep": "results-chain-phi4"
+    }
+  ],
+  "valid_combined_rows": 5021
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "method": "HMAC-SHA256 of complete cache keys with a shared ephemeral key; session labels enumerated per workload; secret and mappings discarded",
+  "files": [
+    {
+      "workload": "scripted",
+      "source_sha256": "8f131f46d2a754bc81a8402684cc296b679d64259917272d15630391c02dec13",
+      "released_path": "data/traces/full_400_sessions.csv",
+      "released_sha256": "6664aef51741a7ec0ed9a7247cbd792ee40c335379b721ae2fcf272a13d604ca",
+      "request_rows": 82455,
+      "positive_size_rows": 82455,
+      "object_size_bytes": 2236749954,
+      "unique_legacy_session_labels": 400,
+      "retained_nonkey_sequence_sha256": "b808e1968dda261481ebf0ab28f3b7c1f4c846df4fe9fb99d91bafe7420cae68",
+      "retained_nonkey_fields_identical": true
+    },
+    {
+      "workload": "llm",
+      "source_sha256": "4d43e831182cb554c2880aa9a2fc92bb2bac5ac34299e0ec382812a25d94f5a1",
+      "released_path": "data/traces/llm_full_901.csv",
+      "released_sha256": "68b5221500d53c4ac9fc18f6673f43b11746a0597b7cee06b1190bd3b60f7042",
+      "request_rows": 357782,
+      "positive_size_rows": 236073,
+      "object_size_bytes": 4587491218,
+      "unique_legacy_session_labels": 100,
+      "retained_nonkey_sequence_sha256": "a94465d32ed9283c105016e92f5043b3680be428ef2081fb99f652a60ce39ae9",
+      "retained_nonkey_fields_identical": true
+    }
+  ],
+  "distinct_source_keys": 34698,
+  "distinct_released_keys": 34698,
+  "cache_key_equality_preserved_across_both_inputs": true
+}

@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "description": "Sanitized source-level projection of retained historical summary metadata. Not an exact historical software environment reconstruction. No network/model execution. max_steps is an action budget, not an HTTP request budget.",
+  "sources": [
+    {
+      "cohort": "paper-corpus",
+      "source": "scripted-zurich",
+      "attempts": 100,
+      "configurations": [
+        {
+          "max_steps": 15,
+          "backend": "browseruse",
+          "surface": "live",
+          "live_driver": "scripted-random",
+          "attempts": 100
+        }
+      ]
+    },
+    {
+      "cohort": "paper-corpus",
+      "source": "scripted-us-central",
+      "attempts": 100,
+      "configurations": [
+        {
+          "max_steps": 15,
+          "backend": "browseruse",
+          "surface": "live",
+          "live_driver": "scripted-random",
+          "attempts": 100
+        }
+      ]
+    },
+    {
+      "cohort": "paper-corpus",
+      "source": "scripted-eu-west",
+      "attempts": 100,
+      "configurations": [
+        {
+          "max_steps": 15,
+          "backend": "browseruse",
+          "surface": "live",
+          "live_driver": "scripted-random",
+          "attempts": 100
+        }
+      ]
+    },
+    {
+      "cohort": "paper-corpus",
+      "source": "scripted-asia-southeast",
+      "attempts": 100,
+      "configurations": [
+        {
+          "max_steps": 15,
+          "backend": "browseruse",
+          "surface": "live",
+          "live_driver": "scripted-random",
+          "attempts": 100
+        }
+      ]
+    },
+    {
+      "cohort": "paper-corpus",
+      "source": "gcp-three-region-fanout",
+      "attempts": 450,
+      "configurations": [
+        {
+          "max_steps": 20,
+          "backend": "browseruse",
+          "surface": "live",
+          "live_driver": "unknown",
+          "attempts": 450
+        }
+      ]
+    },
+    {
+      "cohort": "paper-corpus",
+      "source": "gpt-zurich-extension",
+      "attempts": 100,
+      "configurations": [
+        {
+          "max_steps": 8,
+          "backend": "browseruse",
+          "surface": "live",
+          "live_driver": "unknown",
+          "attempts": 100
+        }
+      ]
+    },
+    {
+      "cohort": "paper-corpus",
+      "source": "gpt-new-region-extension",
+      "attempts": 100,
+      "configurations": [
+        {
+          "max_steps": 20,
+          "backend": "browseruse",
+          "surface": "live",
+          "live_driver": "unknown",
+          "attempts": 100
+        }
+      ]
+    },
+    {
+      "cohort": "paper-corpus",
+      "source": "haiku-initial",
+      "attempts": 30,
+      "configurations": [
+        {
+          "max_steps": 20,
+          "backend": "browseruse",
+          "surface": "live",
+          "live_driver": "unknown",
+          "attempts": 30
+        }
+      ]
+    },
+    {
+      "cohort": "paper-corpus",
+      "source": "haiku-extension",
+      "attempts": 70,
+      "configurations": [
+        {
+          "max_steps": 20,
+          "backend": "browseruse",
+          "surface": "live",
+          "live_driver": "unknown",
+          "attempts": 70
+        }
+      ]
+    },
+    {
+      "cohort": "paper-corpus",
+      "source": "deepseek-initial",
+      "attempts": 50,
+      "configurations": [
+        {
+          "max_steps": 20,
+          "backend": "browseruse",
+          "surface": "live",
+          "live_driver": "unknown",
+          "attempts": 50
+        }
+      ]
+    },
+    {
+      "cohort": "paper-corpus",
+      "source": "deepseek-extension",
+      "attempts": 50,
+      "configurations": [
+        {
+          "max_steps": 20,
+          "backend": "browseruse",
+          "surface": "live",
+          "live_driver": "unknown",
+          "attempts": 50
+        }
+      ]
+    },
+    {
+      "cohort": "paper-corpus",
+      "source": "qwen-initial",
+      "attempts": 51,
+      "configurations": [
+        {
+          "max_steps": 10,
+          "backend": "browseruse",
+          "surface": "live",
+          "live_driver": "unknown",
+          "attempts": 1
+        },
+        {
+          "max_steps": 20,
+          "backend": "browseruse",
+          "surface": "live",
+          "live_driver": "unknown",
+          "attempts": 50
+        }
+      ]
+    },
+    {
+      "cohort": "paper-corpus",
+      "source": "qwen-empty-extension",
+      "attempts": 10,
+      "configurations": [
+        {
+          "max_steps": 20,
+          "backend": "browseruse",
+          "surface": "live",
+          "live_driver": "unknown",
+          "attempts": 10
+        }
+      ]
+    },
+    {
+      "cohort": "table4-reference",
+      "source": "table4-flash-initial",
+      "attempts": 50,
+      "configurations": [
+        {
+          "max_steps": 20,
+          "backend": "browseruse",
+          "surface": "live",
+          "live_driver": "unknown",
+          "attempts": 50
+        }
+      ]
+    },
+    {
+      "cohort": "table4-reference",
+      "source": "table4-flash-extension",
+      "attempts": 100,
+      "configurations": [
+        {
+          "max_steps": 20,
+          "backend": "browseruse",
+          "surface": "live",
+          "live_driver": "unknown",
+          "attempts": 100
+        }
+      ]
+    },
+    {
+      "cohort": "table4-reference",
+      "source": "table4-gpt",
+      "attempts": 100,
+      "configurations": [
+        {
+          "max_steps": 20,
+          "backend": "browseruse",
+          "surface": "live",
+          "live_driver": "unknown",
+          "attempts": 100
+        }
+      ]
+    },
+    {
+      "cohort": "table4-reference",
+      "source": "table4-pro",
+      "attempts": 50,
+      "configurations": [
+        {
+          "max_steps": 20,
+          "backend": "browseruse",
+          "surface": "live",
+          "live_driver": "unknown",
+          "attempts": 50
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "prepared_date": "2026-10-06",
+  "status": "author-approved local preparation; public release authorized; no external submission performed",
+  "title": "BrowseTrace: Reproducible HTTP Traces and Cache Replay for Browser-Mediated AI Workloads",
+  "authors": [
+    {
+      "given_names": "Gennaro Francesco",
+      "family_name": "Landi",
+      "affiliation": "ETH Zurich",
+      "orcid": "0009-0002-9641-8382",
+      "email": "landig@ethz.ch"
+    }
+  ],
+  "arxiv": {
+    "primary_category": "cs.NI",
+    "cross_list_categories": [],
+    "journal_reference": null,
+    "doi": null,
+    "comments": "Original empirical preprint; not peer-reviewed. Public release authorized; no arXiv identifier or DOI assigned. Artifact destination: https://github.com/landigf/publication-artifacts/tree/main/BrowseTrace",
+    "paper_license": "arXiv non-exclusive distribution license",
+    "paper_license_authorized": true,
+    "submitting_account_access_verified": false,
+    "category_endorsement_verified": false,
+    "identifier": null
+  },
+  "artifact": {
+    "repository": "https://github.com/landigf/publication-artifacts",
+    "code_license": "Apache-2.0",
+    "data_license": "CC-BY-4.0",
+    "doi": null,
+    "deposit_state": "author-authorized metadata prepared; no DOI deposit performed",
+    "code_url": "https://github.com/landigf/publication-artifacts/tree/main/BrowseTrace",
+    "source_repository_provenance": "https://github.com/landigf/BrowseTrace",
+    "license_scope": "Artifact software is covered by LICENSE; sanitized traces, census and observation data, provenance records and derived results are covered by LICENSE-DATA. Manuscript distribution is separate.",
+    "public_release_state": "authorized; not released or uploaded by this local preparation"
+  },
+  "author_confirmations_pending": [
+    "arXiv submitting account access and cs.NI endorsement readiness"
+  ],
+  "venue_route": {
+    "near_term": "arXiv empirical preprint",
+    "later": "IMC eligible cycle after checking new CFP and rejection interval; Computer Networks dataset article alternative",
+    "pam_2027": "not included in this preparation commitment"
+  },
+  "abstract": "Browser agents generate sequences of web requests while executing natural-language tasks. Evaluating their network footprint requires distinguishing collected attempts, traffic-producing sessions, and the requests retained for replay. We present BrowseTrace, a sanitized trace artifact and an empirical study of browser workloads across ten task families. Its session census covers 400 scripted sessions and 911 LLM-driven attempts across six model labels; 813 LLM attempts produce recorded traffic. A separate 300-attempt local comparison produces 3.3\u20134.2 times the mean request count of the local scripted driver. The pooled main corpus instead gives a ratio of 0.94 over all LLM attempts and 1.05 over traffic-producing attempts, demonstrating that the local comparison does not establish a general amplification factor. We replay 82,455 scripted and 236,073 positive-size LLM records using six cache policies at five capacities. At 5 MiB, GDSF raises scripted request hits from 37.4% to 59.5% relative to LRU while reducing byte hits from 24.9% to 15.8%. The released census, opaque-key traces, generated tables, and pinned replay environment make these descriptive findings reproducible offline. The study does not measure task success, estimate production traffic, or model HTTP cache correctness.",
+  "keywords": [
+    "browser agents",
+    "HTTP traces",
+    "workload measurement",
+    "cache replay",
+    "reproducibility"
+  ],
+  "version": "publication-2026-10-06",
+  "technical_verification": "VERIFICATION.md; exported source compilation, independent review and clean Git-clone reproduction passed",
+  "author_confirmations": "author-confirmations.json",
+  "authority_basis": "Author confirmation; no independent legal clearance claimed"
+}

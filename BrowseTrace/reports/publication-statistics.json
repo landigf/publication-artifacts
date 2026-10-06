@@ -1,0 +1,1239 @@
+{
+  "census_rows": 1621,
+  "comparison_cohort": {
+    "by_model": {
+      "gemini-2.5-flash": {
+        "attempts": 150,
+        "bytes": 892260809,
+        "maximum_requests": 2059,
+        "mean_requests_per_attempt": 493.08666666666664,
+        "mean_requests_per_positive_attempt": 493.08666666666664,
+        "median_requests_per_attempt": 453.5,
+        "minimum_requests": 16,
+        "positive_traffic": 150,
+        "ratio_to_scripted_zurich_mean": 3.32425447762871,
+        "requests": 73963,
+        "zero_requests": 0
+      },
+      "gemini-2.5-pro": {
+        "attempts": 50,
+        "bytes": 366133356,
+        "maximum_requests": 2420,
+        "mean_requests_per_attempt": 617.96,
+        "mean_requests_per_positive_attempt": 617.96,
+        "median_requests_per_attempt": 616.0,
+        "minimum_requests": 20,
+        "positive_traffic": 50,
+        "ratio_to_scripted_zurich_mean": 4.166116092496461,
+        "requests": 30898,
+        "zero_requests": 0
+      },
+      "gpt-4.1-mini": {
+        "attempts": 100,
+        "bytes": 636530235,
+        "maximum_requests": 1296,
+        "mean_requests_per_attempt": 533.7,
+        "mean_requests_per_positive_attempt": 533.7,
+        "median_requests_per_attempt": 476.5,
+        "minimum_requests": 28,
+        "positive_traffic": 100,
+        "ratio_to_scripted_zurich_mean": 3.598058383334457,
+        "requests": 53370,
+        "zero_requests": 0
+      }
+    },
+    "by_task": {
+      "api-integration-1": {
+        "models": {
+          "gemini-2.5-flash": {
+            "attempts": 15,
+            "bytes": 67053129,
+            "maximum_requests": 393,
+            "mean_requests_per_attempt": 256.6666666666667,
+            "mean_requests_per_positive_attempt": 256.6666666666667,
+            "median_requests_per_attempt": 246,
+            "minimum_requests": 149,
+            "positive_traffic": 15,
+            "ratio_to_task_scripted_zurich_mean": 2.2475189725627556,
+            "requests": 3850,
+            "zero_requests": 0
+          },
+          "gemini-2.5-pro": {
+            "attempts": 5,
+            "bytes": 28756609,
+            "maximum_requests": 654,
+            "mean_requests_per_attempt": 475.2,
+            "mean_requests_per_positive_attempt": 475.2,
+            "median_requests_per_attempt": 514,
+            "minimum_requests": 275,
+            "positive_traffic": 5,
+            "ratio_to_task_scripted_zurich_mean": 4.161120840630472,
+            "requests": 2376,
+            "zero_requests": 0
+          },
+          "gpt-4.1-mini": {
+            "attempts": 10,
+            "bytes": 54713853,
+            "maximum_requests": 464,
+            "mean_requests_per_attempt": 288.5,
+            "mean_requests_per_positive_attempt": 288.5,
+            "median_requests_per_attempt": 273.5,
+            "minimum_requests": 190,
+            "positive_traffic": 10,
+            "ratio_to_task_scripted_zurich_mean": 2.5262697022767076,
+            "requests": 2885,
+            "zero_requests": 0
+          }
+        },
+        "scripted_zurich": {
+          "attempts": 10,
+          "bytes": 18039498,
+          "maximum_requests": 122,
+          "mean_requests_per_attempt": 114.2,
+          "mean_requests_per_positive_attempt": 114.2,
+          "median_requests_per_attempt": 119.5,
+          "minimum_requests": 100,
+          "positive_traffic": 10,
+          "requests": 1142,
+          "zero_requests": 0
+        }
+      },
+      "documentation-lookup-1": {
+        "models": {
+          "gemini-2.5-flash": {
+            "attempts": 15,
+            "bytes": 13660387,
+            "maximum_requests": 376,
+            "mean_requests_per_attempt": 310.53333333333336,
+            "mean_requests_per_positive_attempt": 310.53333333333336,
+            "median_requests_per_attempt": 315,
+            "minimum_requests": 249,
+            "positive_traffic": 15,
+            "ratio_to_task_scripted_zurich_mean": 2.4962486602357985,
+            "requests": 4658,
+            "zero_requests": 0
+          },
+          "gemini-2.5-pro": {
+            "attempts": 5,
+            "bytes": 4567550,
+            "maximum_requests": 294,
+            "mean_requests_per_attempt": 288.4,
+            "mean_requests_per_positive_attempt": 288.4,
+            "median_requests_per_attempt": 294,
+            "minimum_requests": 280,
+            "positive_traffic": 5,
+            "ratio_to_task_scripted_zurich_mean": 2.318327974276527,
+            "requests": 1442,
+            "zero_requests": 0
+          },
+          "gpt-4.1-mini": {
+            "attempts": 10,
+            "bytes": 8838955,
+            "maximum_requests": 277,
+            "mean_requests_per_attempt": 194.5,
+            "mean_requests_per_positive_attempt": 194.5,
+            "median_requests_per_attempt": 187.0,
+            "minimum_requests": 163,
+            "positive_traffic": 10,
+            "ratio_to_task_scripted_zurich_mean": 1.5635048231511253,
+            "requests": 1945,
+            "zero_requests": 0
+          }
+        },
+        "scripted_zurich": {
+          "attempts": 10,
+          "bytes": 8475842,
+          "maximum_requests": 126,
+          "mean_requests_per_attempt": 124.4,
+          "mean_requests_per_positive_attempt": 124.4,
+          "median_requests_per_attempt": 126.0,
+          "minimum_requests": 122,
+          "positive_traffic": 10,
+          "requests": 1244,
+          "zero_requests": 0
+        }
+      },
+      "fact-checking-1": {
+        "models": {
+          "gemini-2.5-flash": {
+            "attempts": 15,
+            "bytes": 67918011,
+            "maximum_requests": 622,
+            "mean_requests_per_attempt": 293.53333333333336,
+            "mean_requests_per_positive_attempt": 293.53333333333336,
+            "median_requests_per_attempt": 236,
+            "minimum_requests": 53,
+            "positive_traffic": 15,
+            "ratio_to_task_scripted_zurich_mean": 3.3817204301075274,
+            "requests": 4403,
+            "zero_requests": 0
+          },
+          "gemini-2.5-pro": {
+            "attempts": 5,
+            "bytes": 36051123,
+            "maximum_requests": 886,
+            "mean_requests_per_attempt": 467.2,
+            "mean_requests_per_positive_attempt": 467.2,
+            "median_requests_per_attempt": 509,
+            "minimum_requests": 154,
+            "positive_traffic": 5,
+            "ratio_to_task_scripted_zurich_mean": 5.382488479262673,
+            "requests": 2336,
+            "zero_requests": 0
+          },
+          "gpt-4.1-mini": {
+            "attempts": 10,
+            "bytes": 68033699,
+            "maximum_requests": 1290,
+            "mean_requests_per_attempt": 553.1,
+            "mean_requests_per_positive_attempt": 553.1,
+            "median_requests_per_attempt": 326.5,
+            "minimum_requests": 186,
+            "positive_traffic": 10,
+            "ratio_to_task_scripted_zurich_mean": 6.372119815668203,
+            "requests": 5531,
+            "zero_requests": 0
+          }
+        },
+        "scripted_zurich": {
+          "attempts": 10,
+          "bytes": 30653266,
+          "maximum_requests": 88,
+          "mean_requests_per_attempt": 86.8,
+          "mean_requests_per_positive_attempt": 86.8,
+          "median_requests_per_attempt": 87.0,
+          "minimum_requests": 84,
+          "positive_traffic": 10,
+          "requests": 868,
+          "zero_requests": 0
+        }
+      },
+      "job-market-1": {
+        "models": {
+          "gemini-2.5-flash": {
+            "attempts": 15,
+            "bytes": 147817820,
+            "maximum_requests": 960,
+            "mean_requests_per_attempt": 842.0,
+            "mean_requests_per_positive_attempt": 842.0,
+            "median_requests_per_attempt": 837,
+            "minimum_requests": 674,
+            "positive_traffic": 15,
+            "ratio_to_task_scripted_zurich_mean": 4.0755082284607935,
+            "requests": 12630,
+            "zero_requests": 0
+          },
+          "gemini-2.5-pro": {
+            "attempts": 5,
+            "bytes": 52023673,
+            "maximum_requests": 2420,
+            "mean_requests_per_attempt": 1280.2,
+            "mean_requests_per_positive_attempt": 1280.2,
+            "median_requests_per_attempt": 1072,
+            "minimum_requests": 827,
+            "positive_traffic": 5,
+            "ratio_to_task_scripted_zurich_mean": 6.196515004840271,
+            "requests": 6401,
+            "zero_requests": 0
+          },
+          "gpt-4.1-mini": {
+            "attempts": 10,
+            "bytes": 84831896,
+            "maximum_requests": 1078,
+            "mean_requests_per_attempt": 785.6,
+            "mean_requests_per_positive_attempt": 785.6,
+            "median_requests_per_attempt": 735.0,
+            "minimum_requests": 668,
+            "positive_traffic": 10,
+            "ratio_to_task_scripted_zurich_mean": 3.8025169409486934,
+            "requests": 7856,
+            "zero_requests": 0
+          }
+        },
+        "scripted_zurich": {
+          "attempts": 10,
+          "bytes": 38688860,
+          "maximum_requests": 241,
+          "mean_requests_per_attempt": 206.6,
+          "mean_requests_per_positive_attempt": 206.6,
+          "median_requests_per_attempt": 229.0,
+          "minimum_requests": 143,
+          "positive_traffic": 10,
+          "requests": 2066,
+          "zero_requests": 0
+        }
+      },
+      "literature-review-1": {
+        "models": {
+          "gemini-2.5-flash": {
+            "attempts": 15,
+            "bytes": 11345954,
+            "maximum_requests": 716,
+            "mean_requests_per_attempt": 411.93333333333334,
+            "mean_requests_per_positive_attempt": 411.93333333333334,
+            "median_requests_per_attempt": 454,
+            "minimum_requests": 72,
+            "positive_traffic": 15,
+            "ratio_to_task_scripted_zurich_mean": 17.163888888888888,
+            "requests": 6179,
+            "zero_requests": 0
+          },
+          "gemini-2.5-pro": {
+            "attempts": 5,
+            "bytes": 3148025,
+            "maximum_requests": 775,
+            "mean_requests_per_attempt": 437.8,
+            "mean_requests_per_positive_attempt": 437.8,
+            "median_requests_per_attempt": 455,
+            "minimum_requests": 20,
+            "positive_traffic": 5,
+            "ratio_to_task_scripted_zurich_mean": 18.241666666666667,
+            "requests": 2189,
+            "zero_requests": 0
+          },
+          "gpt-4.1-mini": {
+            "attempts": 10,
+            "bytes": 8386818,
+            "maximum_requests": 601,
+            "mean_requests_per_attempt": 369.0,
+            "mean_requests_per_positive_attempt": 369.0,
+            "median_requests_per_attempt": 418.5,
+            "minimum_requests": 80,
+            "positive_traffic": 10,
+            "ratio_to_task_scripted_zurich_mean": 15.375,
+            "requests": 3690,
+            "zero_requests": 0
+          }
+        },
+        "scripted_zurich": {
+          "attempts": 10,
+          "bytes": 3559577,
+          "maximum_requests": 25,
+          "mean_requests_per_attempt": 24.0,
+          "mean_requests_per_positive_attempt": 24.0,
+          "median_requests_per_attempt": 24.0,
+          "minimum_requests": 23,
+          "positive_traffic": 10,
+          "requests": 240,
+          "zero_requests": 0
+        }
+      },
+      "news-aggregation-1": {
+        "models": {
+          "gemini-2.5-flash": {
+            "attempts": 15,
+            "bytes": 180629678,
+            "maximum_requests": 1124,
+            "mean_requests_per_attempt": 826.9333333333333,
+            "mean_requests_per_positive_attempt": 826.9333333333333,
+            "median_requests_per_attempt": 820,
+            "minimum_requests": 581,
+            "positive_traffic": 15,
+            "ratio_to_task_scripted_zurich_mean": 2.2538384664304534,
+            "requests": 12404,
+            "zero_requests": 0
+          },
+          "gemini-2.5-pro": {
+            "attempts": 5,
+            "bytes": 65665872,
+            "maximum_requests": 871,
+            "mean_requests_per_attempt": 794.8,
+            "mean_requests_per_positive_attempt": 794.8,
+            "median_requests_per_attempt": 794,
+            "minimum_requests": 731,
+            "positive_traffic": 5,
+            "ratio_to_task_scripted_zurich_mean": 2.1662578359225946,
+            "requests": 3974,
+            "zero_requests": 0
+          },
+          "gpt-4.1-mini": {
+            "attempts": 10,
+            "bytes": 103517685,
+            "maximum_requests": 991,
+            "mean_requests_per_attempt": 596.4,
+            "mean_requests_per_positive_attempt": 596.4,
+            "median_requests_per_attempt": 747.5,
+            "minimum_requests": 153,
+            "positive_traffic": 10,
+            "ratio_to_task_scripted_zurich_mean": 1.62551103843009,
+            "requests": 5964,
+            "zero_requests": 0
+          }
+        },
+        "scripted_zurich": {
+          "attempts": 10,
+          "bytes": 101049321,
+          "maximum_requests": 381,
+          "mean_requests_per_attempt": 366.9,
+          "mean_requests_per_positive_attempt": 366.9,
+          "median_requests_per_attempt": 362.0,
+          "minimum_requests": 353,
+          "positive_traffic": 10,
+          "requests": 3669,
+          "zero_requests": 0
+        }
+      },
+      "product-comparison-1": {
+        "models": {
+          "gemini-2.5-flash": {
+            "attempts": 15,
+            "bytes": 112780575,
+            "maximum_requests": 835,
+            "mean_requests_per_attempt": 503.0,
+            "mean_requests_per_positive_attempt": 503.0,
+            "median_requests_per_attempt": 480,
+            "minimum_requests": 383,
+            "positive_traffic": 15,
+            "ratio_to_task_scripted_zurich_mean": 2.0007955449482897,
+            "requests": 7545,
+            "zero_requests": 0
+          },
+          "gemini-2.5-pro": {
+            "attempts": 5,
+            "bytes": 71894215,
+            "maximum_requests": 1335,
+            "mean_requests_per_attempt": 903.0,
+            "mean_requests_per_positive_attempt": 903.0,
+            "median_requests_per_attempt": 756,
+            "minimum_requests": 646,
+            "positive_traffic": 5,
+            "ratio_to_task_scripted_zurich_mean": 3.591885441527446,
+            "requests": 4515,
+            "zero_requests": 0
+          },
+          "gpt-4.1-mini": {
+            "attempts": 10,
+            "bytes": 122609415,
+            "maximum_requests": 853,
+            "mean_requests_per_attempt": 658.5,
+            "mean_requests_per_positive_attempt": 658.5,
+            "median_requests_per_attempt": 697.5,
+            "minimum_requests": 357,
+            "positive_traffic": 10,
+            "ratio_to_task_scripted_zurich_mean": 2.619331742243437,
+            "requests": 6585,
+            "zero_requests": 0
+          }
+        },
+        "scripted_zurich": {
+          "attempts": 10,
+          "bytes": 82458277,
+          "maximum_requests": 259,
+          "mean_requests_per_attempt": 251.4,
+          "mean_requests_per_positive_attempt": 251.4,
+          "median_requests_per_attempt": 249.5,
+          "minimum_requests": 246,
+          "positive_traffic": 10,
+          "requests": 2514,
+          "zero_requests": 0
+        }
+      },
+      "real-estate-1": {
+        "models": {
+          "gemini-2.5-flash": {
+            "attempts": 15,
+            "bytes": 34922390,
+            "maximum_requests": 359,
+            "mean_requests_per_attempt": 122.2,
+            "mean_requests_per_positive_attempt": 122.2,
+            "median_requests_per_attempt": 104,
+            "minimum_requests": 16,
+            "positive_traffic": 15,
+            "ratio_to_task_scripted_zurich_mean": 7.6375,
+            "requests": 1833,
+            "zero_requests": 0
+          },
+          "gemini-2.5-pro": {
+            "attempts": 5,
+            "bytes": 10486457,
+            "maximum_requests": 110,
+            "mean_requests_per_attempt": 103.0,
+            "mean_requests_per_positive_attempt": 103.0,
+            "median_requests_per_attempt": 102,
+            "minimum_requests": 95,
+            "positive_traffic": 5,
+            "ratio_to_task_scripted_zurich_mean": 6.4375,
+            "requests": 515,
+            "zero_requests": 0
+          },
+          "gpt-4.1-mini": {
+            "attempts": 10,
+            "bytes": 39138177,
+            "maximum_requests": 452,
+            "mean_requests_per_attempt": 221.1,
+            "mean_requests_per_positive_attempt": 221.1,
+            "median_requests_per_attempt": 184.0,
+            "minimum_requests": 28,
+            "positive_traffic": 10,
+            "ratio_to_task_scripted_zurich_mean": 13.81875,
+            "requests": 2211,
+            "zero_requests": 0
+          }
+        },
+        "scripted_zurich": {
+          "attempts": 10,
+          "bytes": 808389,
+          "maximum_requests": 16,
+          "mean_requests_per_attempt": 16.0,
+          "mean_requests_per_positive_attempt": 16.0,
+          "median_requests_per_attempt": 16.0,
+          "minimum_requests": 16,
+          "positive_traffic": 10,
+          "requests": 160,
+          "zero_requests": 0
+        }
+      },
+      "regulatory-lookup-1": {
+        "models": {
+          "gemini-2.5-flash": {
+            "attempts": 15,
+            "bytes": 27546465,
+            "maximum_requests": 761,
+            "mean_requests_per_attempt": 363.2,
+            "mean_requests_per_positive_attempt": 363.2,
+            "median_requests_per_attempt": 397,
+            "minimum_requests": 41,
+            "positive_traffic": 15,
+            "ratio_to_task_scripted_zurich_mean": 9.312820512820512,
+            "requests": 5448,
+            "zero_requests": 0
+          },
+          "gemini-2.5-pro": {
+            "attempts": 5,
+            "bytes": 6753396,
+            "maximum_requests": 1059,
+            "mean_requests_per_attempt": 471.6,
+            "mean_requests_per_positive_attempt": 471.6,
+            "median_requests_per_attempt": 254,
+            "minimum_requests": 251,
+            "positive_traffic": 5,
+            "ratio_to_task_scripted_zurich_mean": 12.092307692307694,
+            "requests": 2358,
+            "zero_requests": 0
+          },
+          "gpt-4.1-mini": {
+            "attempts": 10,
+            "bytes": 15095557,
+            "maximum_requests": 1027,
+            "mean_requests_per_attempt": 839.2,
+            "mean_requests_per_positive_attempt": 839.2,
+            "median_requests_per_attempt": 911.0,
+            "minimum_requests": 492,
+            "positive_traffic": 10,
+            "ratio_to_task_scripted_zurich_mean": 21.51794871794872,
+            "requests": 8392,
+            "zero_requests": 0
+          }
+        },
+        "scripted_zurich": {
+          "attempts": 10,
+          "bytes": 10994370,
+          "maximum_requests": 39,
+          "mean_requests_per_attempt": 39.0,
+          "mean_requests_per_positive_attempt": 39.0,
+          "median_requests_per_attempt": 39.0,
+          "minimum_requests": 39,
+          "positive_traffic": 10,
+          "requests": 390,
+          "zero_requests": 0
+        }
+      },
+      "travel-planning-1": {
+        "models": {
+          "gemini-2.5-flash": {
+            "attempts": 15,
+            "bytes": 228586400,
+            "maximum_requests": 2059,
+            "mean_requests_per_attempt": 1000.8666666666667,
+            "mean_requests_per_positive_attempt": 1000.8666666666667,
+            "median_requests_per_attempt": 895,
+            "minimum_requests": 353,
+            "positive_traffic": 15,
+            "ratio_to_task_scripted_zurich_mean": 3.9404199475065615,
+            "requests": 15013,
+            "zero_requests": 0
+          },
+          "gemini-2.5-pro": {
+            "attempts": 5,
+            "bytes": 86786436,
+            "maximum_requests": 1354,
+            "mean_requests_per_attempt": 958.4,
+            "mean_requests_per_positive_attempt": 958.4,
+            "median_requests_per_attempt": 929,
+            "minimum_requests": 659,
+            "positive_traffic": 5,
+            "ratio_to_task_scripted_zurich_mean": 3.7732283464566927,
+            "requests": 4792,
+            "zero_requests": 0
+          },
+          "gpt-4.1-mini": {
+            "attempts": 10,
+            "bytes": 131364180,
+            "maximum_requests": 1296,
+            "mean_requests_per_attempt": 831.1,
+            "mean_requests_per_positive_attempt": 831.1,
+            "median_requests_per_attempt": 884.0,
+            "minimum_requests": 381,
+            "positive_traffic": 10,
+            "ratio_to_task_scripted_zurich_mean": 3.2720472440944883,
+            "requests": 8311,
+            "zero_requests": 0
+          }
+        },
+        "scripted_zurich": {
+          "attempts": 10,
+          "bytes": 70406041,
+          "maximum_requests": 297,
+          "mean_requests_per_attempt": 254.0,
+          "mean_requests_per_positive_attempt": 254.0,
+          "median_requests_per_attempt": 266.0,
+          "minimum_requests": 185,
+          "positive_traffic": 10,
+          "requests": 2540,
+          "zero_requests": 0
+        }
+      }
+    },
+    "scripted_zurich": {
+      "attempts": 100,
+      "bytes": 365133441,
+      "maximum_requests": 381,
+      "mean_requests_per_attempt": 148.33,
+      "mean_requests_per_positive_attempt": 148.33,
+      "median_requests_per_attempt": 122.0,
+      "minimum_requests": 16,
+      "positive_traffic": 100,
+      "requests": 14833,
+      "zero_requests": 0
+    },
+    "total": {
+      "attempts": 300,
+      "bytes": 1894924400,
+      "maximum_requests": 2420,
+      "mean_requests_per_attempt": 527.4366666666666,
+      "mean_requests_per_positive_attempt": 527.4366666666666,
+      "median_requests_per_attempt": 456.0,
+      "minimum_requests": 16,
+      "positive_traffic": 300,
+      "requests": 158231,
+      "zero_requests": 0
+    }
+  },
+  "human_reference": {
+    "attempts": 10,
+    "bytes": 38295388,
+    "maximum_requests": 1929,
+    "mean_requests_per_attempt": 528.2,
+    "mean_requests_per_positive_attempt": 528.2,
+    "median_requests_per_attempt": 247.5,
+    "minimum_requests": 15,
+    "participants": 1,
+    "positive_traffic": 10,
+    "requests": 5282,
+    "zero_requests": 0
+  },
+  "interpretation": "Descriptive retained cohorts with different browser substrates, step budgets, models, regions, dates and sample sizes. Ratios are cohort-conditional and are not causal model effects. No semantic task-success labels or population human baseline.",
+  "liveness": {
+    "legacy_comparison": {
+      "attempts": 300,
+      "percent_all_attempts": 91.33333333333333,
+      "percent_positive_attempts": 91.33333333333333,
+      "positive_traffic": 300,
+      "reached_content": 274
+    },
+    "llm": {
+      "attempts": 911,
+      "percent_all_attempts": 79.36333699231614,
+      "percent_positive_attempts": 88.92988929889299,
+      "positive_traffic": 813,
+      "reached_content": 723
+    },
+    "llm_by_model": {
+      "claude-haiku-4.5": {
+        "attempts": 100,
+        "percent_all_attempts": 86.0,
+        "percent_positive_attempts": 86.0,
+        "positive_traffic": 100,
+        "reached_content": 86
+      },
+      "deepseek-v3.2": {
+        "attempts": 100,
+        "percent_all_attempts": 85.0,
+        "percent_positive_attempts": 85.0,
+        "positive_traffic": 100,
+        "reached_content": 85
+      },
+      "gemini-2.5-flash": {
+        "attempts": 150,
+        "percent_all_attempts": 97.33333333333334,
+        "percent_positive_attempts": 97.33333333333334,
+        "positive_traffic": 150,
+        "reached_content": 146
+      },
+      "gemini-2.5-pro": {
+        "attempts": 150,
+        "percent_all_attempts": 31.333333333333336,
+        "percent_positive_attempts": 73.4375,
+        "positive_traffic": 64,
+        "reached_content": 47
+      },
+      "gpt-4.1-mini": {
+        "attempts": 350,
+        "percent_all_attempts": 89.42857142857143,
+        "percent_positive_attempts": 89.9425287356322,
+        "positive_traffic": 348,
+        "reached_content": 313
+      },
+      "qwen-2.5-coder-7b": {
+        "attempts": 61,
+        "percent_all_attempts": 75.40983606557377,
+        "percent_positive_attempts": 90.19607843137256,
+        "positive_traffic": 51,
+        "reached_content": 46
+      }
+    },
+    "meaning": "Mechanical trace liveness; not semantic success. Predicate counts are supplied sanitized projections, not recomputed from omitted raw URLs.",
+    "predicate": "distinct_hostname_count >= 3 AND status_200_nonroot_count >= 5",
+    "scripted": {
+      "attempts": 400,
+      "percent_all_attempts": 89.25,
+      "percent_positive_attempts": 89.25,
+      "positive_traffic": 400,
+      "reached_content": 357
+    }
+  },
+  "llm_by_model": {
+    "claude-haiku-4.5": {
+      "attempts": 100,
+      "bytes": 296446876,
+      "maximum_requests": 560,
+      "mean_requests_per_attempt": 206.86,
+      "mean_requests_per_positive_attempt": 206.86,
+      "median_requests_per_attempt": 159.0,
+      "minimum_requests": 3,
+      "positive_traffic": 100,
+      "requests": 20686,
+      "zero_requests": 0
+    },
+    "deepseek-v3.2": {
+      "attempts": 100,
+      "bytes": 453343992,
+      "maximum_requests": 1897,
+      "mean_requests_per_attempt": 385.13,
+      "mean_requests_per_positive_attempt": 385.13,
+      "median_requests_per_attempt": 315.0,
+      "minimum_requests": 16,
+      "positive_traffic": 100,
+      "requests": 38513,
+      "zero_requests": 0
+    },
+    "gemini-2.5-flash": {
+      "attempts": 150,
+      "bytes": 878830415,
+      "maximum_requests": 2710,
+      "mean_requests_per_attempt": 461.75333333333333,
+      "mean_requests_per_positive_attempt": 461.75333333333333,
+      "median_requests_per_attempt": 343.0,
+      "minimum_requests": 28,
+      "positive_traffic": 150,
+      "requests": 69263,
+      "zero_requests": 0
+    },
+    "gemini-2.5-pro": {
+      "attempts": 150,
+      "bytes": 587257113,
+      "maximum_requests": 4316,
+      "mean_requests_per_attempt": 321.94666666666666,
+      "mean_requests_per_positive_attempt": 754.5625,
+      "median_requests_per_attempt": 0.0,
+      "minimum_requests": 0,
+      "positive_traffic": 64,
+      "requests": 48292,
+      "zero_requests": 86
+    },
+    "gpt-4.1-mini": {
+      "attempts": 350,
+      "bytes": 2204586218,
+      "maximum_requests": 2898,
+      "mean_requests_per_attempt": 480.3885714285714,
+      "mean_requests_per_positive_attempt": 483.14942528735634,
+      "median_requests_per_attempt": 373.0,
+      "minimum_requests": 0,
+      "positive_traffic": 348,
+      "requests": 168136,
+      "zero_requests": 2
+    },
+    "qwen-2.5-coder-7b": {
+      "attempts": 61,
+      "bytes": 167026604,
+      "maximum_requests": 1108,
+      "mean_requests_per_attempt": 211.34426229508196,
+      "mean_requests_per_positive_attempt": 252.7843137254902,
+      "median_requests_per_attempt": 155,
+      "minimum_requests": 0,
+      "positive_traffic": 51,
+      "requests": 12892,
+      "zero_requests": 10
+    }
+  },
+  "paper_by_region_label": {
+    "asia-southeast": {
+      "attempts": 100,
+      "bytes": 605083512,
+      "maximum_requests": 1843,
+      "mean_requests_per_attempt": 501.05,
+      "mean_requests_per_positive_attempt": 501.05,
+      "median_requests_per_attempt": 319.5,
+      "minimum_requests": 31,
+      "positive_traffic": 100,
+      "requests": 50105,
+      "zero_requests": 0
+    },
+    "asia-southeast1": {
+      "attempts": 150,
+      "bytes": 846427652,
+      "maximum_requests": 4316,
+      "mean_requests_per_attempt": 460.48,
+      "mean_requests_per_positive_attempt": 570.8429752066115,
+      "median_requests_per_attempt": 319.5,
+      "minimum_requests": 0,
+      "positive_traffic": 121,
+      "requests": 69072,
+      "zero_requests": 29
+    },
+    "australia-southeast1": {
+      "attempts": 50,
+      "bytes": 380567740,
+      "maximum_requests": 1774,
+      "mean_requests_per_attempt": 583.98,
+      "mean_requests_per_positive_attempt": 608.3125,
+      "median_requests_per_attempt": 479.5,
+      "minimum_requests": 0,
+      "positive_traffic": 48,
+      "requests": 29199,
+      "zero_requests": 2
+    },
+    "eu-west": {
+      "attempts": 100,
+      "bytes": 593154899,
+      "maximum_requests": 1442,
+      "mean_requests_per_attempt": 473.9,
+      "mean_requests_per_positive_attempt": 473.9,
+      "median_requests_per_attempt": 317.5,
+      "minimum_requests": 31,
+      "positive_traffic": 100,
+      "requests": 47390,
+      "zero_requests": 0
+    },
+    "europe-west1": {
+      "attempts": 150,
+      "bytes": 788838270,
+      "maximum_requests": 1314,
+      "mean_requests_per_attempt": 375.1,
+      "mean_requests_per_positive_attempt": 457.4390243902439,
+      "median_requests_per_attempt": 300.5,
+      "minimum_requests": 0,
+      "positive_traffic": 123,
+      "requests": 56265,
+      "zero_requests": 27
+    },
+    "europe-west6": {
+      "attempts": 100,
+      "bytes": 435131937,
+      "maximum_requests": 840,
+      "mean_requests_per_attempt": 292.72,
+      "mean_requests_per_positive_attempt": 292.72,
+      "median_requests_per_attempt": 255.5,
+      "minimum_requests": 10,
+      "positive_traffic": 100,
+      "requests": 29272,
+      "zero_requests": 0
+    },
+    "southamerica-east1": {
+      "attempts": 50,
+      "bytes": 338807045,
+      "maximum_requests": 1901,
+      "mean_requests_per_attempt": 508.64,
+      "mean_requests_per_positive_attempt": 508.64,
+      "median_requests_per_attempt": 399.5,
+      "minimum_requests": 31,
+      "positive_traffic": 50,
+      "requests": 25432,
+      "zero_requests": 0
+    },
+    "us-central": {
+      "attempts": 100,
+      "bytes": 673378102,
+      "maximum_requests": 1980,
+      "mean_requests_per_attempt": 557.39,
+      "mean_requests_per_positive_attempt": 557.39,
+      "median_requests_per_attempt": 337.0,
+      "minimum_requests": 31,
+      "positive_traffic": 100,
+      "requests": 55739,
+      "zero_requests": 0
+    },
+    "us-central1": {
+      "attempts": 150,
+      "bytes": 880901102,
+      "maximum_requests": 3219,
+      "mean_requests_per_attempt": 509.67333333333335,
+      "mean_requests_per_positive_attempt": 637.0916666666667,
+      "median_requests_per_attempt": 322.5,
+      "minimum_requests": 0,
+      "positive_traffic": 120,
+      "requests": 76451,
+      "zero_requests": 30
+    },
+    "zurich": {
+      "attempts": 100,
+      "bytes": 365133441,
+      "maximum_requests": 381,
+      "mean_requests_per_attempt": 148.33,
+      "mean_requests_per_positive_attempt": 148.33,
+      "median_requests_per_attempt": 122.0,
+      "minimum_requests": 16,
+      "positive_traffic": 100,
+      "requests": 14833,
+      "zero_requests": 0
+    },
+    "zurich-local": {
+      "attempts": 261,
+      "bytes": 916817472,
+      "maximum_requests": 1897,
+      "mean_requests_per_attempt": 276.2107279693487,
+      "mean_requests_per_positive_attempt": 287.2151394422311,
+      "median_requests_per_attempt": 188,
+      "minimum_requests": 0,
+      "positive_traffic": 251,
+      "requests": 72091,
+      "zero_requests": 10
+    }
+  },
+  "paper_by_source": {
+    "deepseek-extension": {
+      "attempts": 50,
+      "bytes": 236410717,
+      "maximum_requests": 1897,
+      "mean_requests_per_attempt": 396.26,
+      "mean_requests_per_positive_attempt": 396.26,
+      "median_requests_per_attempt": 277.5,
+      "minimum_requests": 23,
+      "positive_traffic": 50,
+      "requests": 19813,
+      "zero_requests": 0
+    },
+    "deepseek-initial": {
+      "attempts": 50,
+      "bytes": 216933275,
+      "maximum_requests": 1139,
+      "mean_requests_per_attempt": 374.0,
+      "mean_requests_per_positive_attempt": 374.0,
+      "median_requests_per_attempt": 328.0,
+      "minimum_requests": 16,
+      "positive_traffic": 50,
+      "requests": 18700,
+      "zero_requests": 0
+    },
+    "gcp-three-region-fanout": {
+      "attempts": 450,
+      "bytes": 2516167024,
+      "maximum_requests": 4316,
+      "mean_requests_per_attempt": 448.41777777777776,
+      "mean_requests_per_positive_attempt": 554.3626373626373,
+      "median_requests_per_attempt": 319.5,
+      "minimum_requests": 0,
+      "positive_traffic": 364,
+      "requests": 201788,
+      "zero_requests": 86
+    },
+    "gpt-new-region-extension": {
+      "attempts": 100,
+      "bytes": 719374785,
+      "maximum_requests": 1901,
+      "mean_requests_per_attempt": 546.31,
+      "mean_requests_per_positive_attempt": 557.4591836734694,
+      "median_requests_per_attempt": 441.5,
+      "minimum_requests": 0,
+      "positive_traffic": 98,
+      "requests": 54631,
+      "zero_requests": 2
+    },
+    "gpt-zurich-extension": {
+      "attempts": 100,
+      "bytes": 435131937,
+      "maximum_requests": 840,
+      "mean_requests_per_attempt": 292.72,
+      "mean_requests_per_positive_attempt": 292.72,
+      "median_requests_per_attempt": 255.5,
+      "minimum_requests": 10,
+      "positive_traffic": 100,
+      "requests": 29272,
+      "zero_requests": 0
+    },
+    "haiku-extension": {
+      "attempts": 70,
+      "bytes": 207463158,
+      "maximum_requests": 560,
+      "mean_requests_per_attempt": 210.9857142857143,
+      "mean_requests_per_positive_attempt": 210.9857142857143,
+      "median_requests_per_attempt": 166.5,
+      "minimum_requests": 5,
+      "positive_traffic": 70,
+      "requests": 14769,
+      "zero_requests": 0
+    },
+    "haiku-initial": {
+      "attempts": 30,
+      "bytes": 88983718,
+      "maximum_requests": 559,
+      "mean_requests_per_attempt": 197.23333333333332,
+      "mean_requests_per_positive_attempt": 197.23333333333332,
+      "median_requests_per_attempt": 136.0,
+      "minimum_requests": 3,
+      "positive_traffic": 30,
+      "requests": 5917,
+      "zero_requests": 0
+    },
+    "qwen-empty-extension": {
+      "attempts": 10,
+      "bytes": 0,
+      "maximum_requests": 0,
+      "mean_requests_per_attempt": 0.0,
+      "mean_requests_per_positive_attempt": null,
+      "median_requests_per_attempt": 0.0,
+      "minimum_requests": 0,
+      "positive_traffic": 0,
+      "requests": 0,
+      "zero_requests": 10
+    },
+    "qwen-initial": {
+      "attempts": 51,
+      "bytes": 167026604,
+      "maximum_requests": 1108,
+      "mean_requests_per_attempt": 252.7843137254902,
+      "mean_requests_per_positive_attempt": 252.7843137254902,
+      "median_requests_per_attempt": 172,
+      "minimum_requests": 15,
+      "positive_traffic": 51,
+      "requests": 12892,
+      "zero_requests": 0
+    },
+    "scripted-asia-southeast": {
+      "attempts": 100,
+      "bytes": 605083512,
+      "maximum_requests": 1843,
+      "mean_requests_per_attempt": 501.05,
+      "mean_requests_per_positive_attempt": 501.05,
+      "median_requests_per_attempt": 319.5,
+      "minimum_requests": 31,
+      "positive_traffic": 100,
+      "requests": 50105,
+      "zero_requests": 0
+    },
+    "scripted-eu-west": {
+      "attempts": 100,
+      "bytes": 593154899,
+      "maximum_requests": 1442,
+      "mean_requests_per_attempt": 473.9,
+      "mean_requests_per_positive_attempt": 473.9,
+      "median_requests_per_attempt": 317.5,
+      "minimum_requests": 31,
+      "positive_traffic": 100,
+      "requests": 47390,
+      "zero_requests": 0
+    },
+    "scripted-us-central": {
+      "attempts": 100,
+      "bytes": 673378102,
+      "maximum_requests": 1980,
+      "mean_requests_per_attempt": 557.39,
+      "mean_requests_per_positive_attempt": 557.39,
+      "median_requests_per_attempt": 337.0,
+      "minimum_requests": 31,
+      "positive_traffic": 100,
+      "requests": 55739,
+      "zero_requests": 0
+    },
+    "scripted-zurich": {
+      "attempts": 100,
+      "bytes": 365133441,
+      "maximum_requests": 381,
+      "mean_requests_per_attempt": 148.33,
+      "mean_requests_per_positive_attempt": 148.33,
+      "median_requests_per_attempt": 122.0,
+      "minimum_requests": 16,
+      "positive_traffic": 100,
+      "requests": 14833,
+      "zero_requests": 0
+    }
+  },
+  "paper_by_task": {
+    "api-integration-1": {
+      "attempts": 130,
+      "bytes": 364867134,
+      "maximum_requests": 517,
+      "mean_requests_per_attempt": 197.16153846153847,
+      "mean_requests_per_positive_attempt": 226.8230088495575,
+      "median_requests_per_attempt": 201.5,
+      "minimum_requests": 0,
+      "positive_traffic": 113,
+      "requests": 25631,
+      "zero_requests": 17
+    },
+    "documentation-lookup-1": {
+      "attempts": 130,
+      "bytes": 116578863,
+      "maximum_requests": 1203,
+      "mean_requests_per_attempt": 345.12307692307695,
+      "mean_requests_per_positive_attempt": 345.12307692307695,
+      "median_requests_per_attempt": 191.0,
+      "minimum_requests": 105,
+      "positive_traffic": 130,
+      "requests": 44866,
+      "zero_requests": 0
+    },
+    "fact-checking-1": {
+      "attempts": 130,
+      "bytes": 491188199,
+      "maximum_requests": 1262,
+      "mean_requests_per_attempt": 260.6384615384615,
+      "mean_requests_per_positive_attempt": 294.6347826086957,
+      "median_requests_per_attempt": 165.0,
+      "minimum_requests": 0,
+      "positive_traffic": 115,
+      "requests": 33883,
+      "zero_requests": 15
+    },
+    "job-market-1": {
+      "attempts": 130,
+      "bytes": 633989348,
+      "maximum_requests": 1108,
+      "mean_requests_per_attempt": 323.68461538461537,
+      "mean_requests_per_positive_attempt": 365.90434782608696,
+      "median_requests_per_attempt": 327.0,
+      "minimum_requests": 0,
+      "positive_traffic": 115,
+      "requests": 42079,
+      "zero_requests": 15
+    },
+    "literature-review-1": {
+      "attempts": 130,
+      "bytes": 105122334,
+      "maximum_requests": 596,
+      "mean_requests_per_attempt": 158.97692307692307,
+      "mean_requests_per_positive_attempt": 173.67226890756302,
+      "median_requests_per_attempt": 86.0,
+      "minimum_requests": 0,
+      "positive_traffic": 119,
+      "requests": 20667,
+      "zero_requests": 11
+    },
+    "news-aggregation-1": {
+      "attempts": 136,
+      "bytes": 1869542647,
+      "maximum_requests": 4316,
+      "mean_requests_per_attempt": 1157.4485294117646,
+      "mean_requests_per_positive_attempt": 1201.6259541984732,
+      "median_requests_per_attempt": 1197.5,
+      "minimum_requests": 0,
+      "positive_traffic": 131,
+      "requests": 157413,
+      "zero_requests": 5
+    },
+    "product-comparison-1": {
+      "attempts": 135,
+      "bytes": 1860390938,
+      "maximum_requests": 1376,
+      "mean_requests_per_attempt": 580.3185185185185,
+      "mean_requests_per_positive_attempt": 602.6384615384616,
+      "median_requests_per_attempt": 565,
+      "minimum_requests": 0,
+      "positive_traffic": 130,
+      "requests": 78343,
+      "zero_requests": 5
+    },
+    "real-estate-1": {
+      "attempts": 130,
+      "bytes": 229064184,
+      "maximum_requests": 1196,
+      "mean_requests_per_attempt": 99.67692307692307,
+      "mean_requests_per_positive_attempt": 112.67826086956522,
+      "median_requests_per_attempt": 31.0,
+      "minimum_requests": 0,
+      "positive_traffic": 115,
+      "requests": 12958,
+      "zero_requests": 15
+    },
+    "regulatory-lookup-1": {
+      "attempts": 130,
+      "bytes": 169528638,
+      "maximum_requests": 1033,
+      "mean_requests_per_attempt": 427.9076923076923,
+      "mean_requests_per_positive_attempt": 427.9076923076923,
+      "median_requests_per_attempt": 422.5,
+      "minimum_requests": 39,
+      "positive_traffic": 130,
+      "requests": 55628,
+      "zero_requests": 0
+    },
+    "travel-planning-1": {
+      "attempts": 130,
+      "bytes": 983968887,
+      "maximum_requests": 1901,
+      "mean_requests_per_attempt": 418.31538461538463,
+      "mean_requests_per_positive_attempt": 472.8782608695652,
+      "median_requests_per_attempt": 371.0,
+      "minimum_requests": 0,
+      "positive_traffic": 115,
+      "requests": 54381,
+      "zero_requests": 15
+    }
+  },
+  "paper_corpus": {
+    "llm": {
+      "attempts": 911,
+      "bytes": 4587491218,
+      "maximum_requests": 4316,
+      "mean_requests_per_attempt": 392.73545554335897,
+      "mean_requests_per_positive_attempt": 440.0762607626076,
+      "median_requests_per_attempt": 289,
+      "minimum_requests": 0,
+      "positive_traffic": 813,
+      "requests": 357782,
+      "zero_requests": 98
+    },
+    "llm_all_attempt_mean_ratio_to_scripted": 0.9347116460539164,
+    "llm_positive_attempt_mean_ratio_to_scripted": 1.0473829145819407,
+    "scripted": {
+      "attempts": 400,
+      "bytes": 2236749954,
+      "maximum_requests": 1980,
+      "mean_requests_per_attempt": 420.1675,
+      "mean_requests_per_positive_attempt": 420.1675,
+      "median_requests_per_attempt": 273.5,
+      "minimum_requests": 16,
+      "positive_traffic": 400,
+      "requests": 168067,
+      "zero_requests": 0
+    },
+    "total": {
+      "attempts": 1311,
+      "bytes": 6824241172,
+      "maximum_requests": 4316,
+      "mean_requests_per_attempt": 401.10526315789474,
+      "mean_requests_per_positive_attempt": 433.51112943116243,
+      "median_requests_per_attempt": 281,
+      "minimum_requests": 0,
+      "positive_traffic": 1213,
+      "requests": 525849,
+      "zero_requests": 98
+    }
+  },
+  "schema_version": 1,
+  "source_hashes": {
+    "data/provenance/collection-metadata-audit.json": "b246e92e1e8cada07f1c90533c98cec23ed7917ad81df6f31a180156719b0e3d",
+    "data/provenance/reached_content_sessions.csv": "20b147648b6a8d638111ea361948b08577a51ad3b41a2e94b3a9f27167c00bc1",
+    "data/provenance/session_census.csv": "f8f3488cf77fb9c42e40602bcaffa9962f29d3166acb1cb6aef436bf47582377"
+  }
+}

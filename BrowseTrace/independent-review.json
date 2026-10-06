@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-10-06",
+  "review_type": "Separate-agent automated technical and skeptical review; not scholarly peer review",
+  "status": "Passed within the executed checks; archive and author-only release gates recorded separately",
+  "unresolved_numerical_citation_or_model_description_defects": 0,
+  "executed_checks": {
+    "independent_census_arithmetic": "passed",
+    "independent_released_csv_arithmetic": "passed",
+    "complete_public_scripted_session_count": 400,
+    "complete_public_scripted_request_count": 168067,
+    "public_scripted_positive_size_multiset_equals_release": true,
+    "recomputed_policy_configurations": 60,
+    "maximum_absolute_hit_ratio_delta": 0.0,
+    "recomputed_workload_metadata_equal": true,
+    "manifest_hashed_files": 48,
+    "manifest_integrity_and_derived_statistics": "passed",
+    "recognized_credential_fields_in_numeric_json": 0,
+    "credential_removal_negative_fixture": "passed",
+    "expanded_native_simulator_fixtures": "passed",
+    "generated_png_figures_visually_inspected": 3,
+    "used_primary_references_independently_examined": 10,
+    "direct_quotations": 0,
+    "environment": {
+      "python": "3.12.2",
+      "libcachesim": "0.3.3.post4",
+      "platform": "Darwin",
+      "machine": "arm64"
+    }
+  },
+  "accounting": {
+    "census_rows": 1621,
+    "liveness_rows": 1611,
+    "main_census_request_records": 525849,
+    "released_csv_rows": 440237,
+    "positive_replay_rows": 318528,
+    "scripted_omitted_zero_size_records": 85612,
+    "scripted": {
+      "census_attempts": 400,
+      "census_requests": 168067,
+      "replay_rows": 82455,
+      "positive_size_rows": 82455,
+      "recorded_bytes": 2236749954,
+      "positive_keys": 17144,
+      "positive_keys_with_multiple_sizes": 3136
+    },
+    "llm": {
+      "census_attempts": 911,
+      "nonempty_attempts": 813,
+      "census_requests": 357782,
+      "replay_rows": 357782,
+      "positive_size_rows": 236073,
+      "zero_size_rows": 121709,
+      "recorded_bytes": 4587491218,
+      "positive_keys": 17931,
+      "positive_keys_with_multiple_sizes": 5637
+    }
+  },
+  "resolved_findings": [
+    {
+      "id": "BT-REVIEW-1",
+      "severity": "medium",
+      "resolution": "Methods and artifact state admission-size resident accounting and current-request byte weighting; quantify varying-size keys; public audit and six-policy fixtures pass"
+    },
+    {
+      "id": "BT-REVIEW-2",
+      "severity": "low",
+      "resolution": "README, citation and submission/deposit metadata titles match the final manuscript"
+    },
+    {
+      "id": "BT-REVIEW-3",
+      "severity": "preparation_checkpoint",
+      "resolution": "Final component manifest present and independently verified; separate archive-level checks remain explicitly outside this review"
+    },
+    {
+      "id": "BT-REVIEW-4",
+      "severity": "low",
+      "resolution": "Methods specify oversized admission rejection on a miss and describe agent_type as a scripted-only column"
+    }
+  ],
+  "not_executed_by_this_reviewer": [
+    "Fresh locked plotting environment reproduction",
+    "Final standalone artifact archive reproduction",
+    "Final arXiv source archive compilation",
+    "Complete final PDF visual inspection",
+    "Author rights, participant consent or coauthor clearance"
+  ],
+  "limitations": [
+    "Raw liveness-counter extraction is not reproducible without unreleased raw requests",
+    "Historical collection completeness and original runtime fidelity are provenance assumptions",
+    "Legacy replay labels do not permit reliable request-level model or region attribution",
+    "Object replay does not establish valid HTTP representation reuse or physical storage capacity",
+    "No causal, representative population, task-success-normalized or production performance inference"
+  ],
+  "subsequent_author_confirmation": {
+    "date": "2026-10-06",
+    "record": "author-confirmations.json",
+    "confirmed": [
+      "sole authorship",
+      "publication and redistribution authority",
+      "own-session participant consent",
+      "AI disclosure and author responsibility",
+      "stated manuscript/code/data licenses"
+    ],
+    "boundary": "Author representations; no independent legal or institutional ethics clearance. Account endorsement and separately scoped historical-repository cleanup remain unresolved."
+  }
+}

@@ -1,0 +1,22 @@
+{
+ "backend_label": "local-phi4-mini",
+ "decisions_sha256": "b7462871293d10eb5925a0c400f45de825b44cffd0943817a6d67dfd296f5860",
+ "model": "phi4-mini",
+ "n_repro": 10,
+ "n_requests": 65,
+ "n_rows": 1744,
+ "phases": [
+  "canon",
+  "pert",
+  "repro"
+ ],
+ "policy_sha256": "99fc1eb2de28e3bf4cbf2108bfd9dfec4423a3b2799221b2c81f7672964a32a0",
+ "policy_version": "v2",
+ "seed": 42,
+ "temperatures": {
+  "canonical": 0.0,
+  "perturbation": 0.0,
+  "sampled": 0.7
+ },
+ "variant": "C3"
+}

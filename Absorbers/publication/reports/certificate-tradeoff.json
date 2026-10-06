@@ -1,0 +1,126 @@
+{
+  "results": [
+    {
+      "calls_saved_frac": 0.62585,
+      "decision_changes": 1,
+      "model": "deepseek-chat",
+      "rows": 1029,
+      "scheme": "P2_dependency_cone",
+      "sweep": "results-chain-deepseek",
+      "unsafe_introduced": 0,
+      "unscoreable_rows": 1
+    },
+    {
+      "calls_saved_frac": 0.508746,
+      "decision_changes": 0,
+      "model": "deepseek-chat",
+      "rows": 1029,
+      "scheme": "cert_eq",
+      "sweep": "results-chain-deepseek",
+      "unsafe_introduced": 0,
+      "unscoreable_rows": 1
+    },
+    {
+      "calls_saved_frac": 0.58552,
+      "decision_changes": 1,
+      "model": "deepseek-chat",
+      "rows": 1029,
+      "scheme": "cert_safe_valid",
+      "sweep": "results-chain-deepseek",
+      "unsafe_introduced": 0,
+      "unscoreable_rows": 1
+    },
+    {
+      "calls_saved_frac": 0.567541,
+      "decision_changes": 1,
+      "model": "deepseek-chat",
+      "rows": 1029,
+      "scheme": "cert_safe_all",
+      "sweep": "results-chain-deepseek",
+      "unsafe_introduced": 0,
+      "unscoreable_rows": 1
+    },
+    {
+      "calls_saved_frac": 0.626336,
+      "decision_changes": 2,
+      "model": "gemma3:4b",
+      "rows": 1029,
+      "scheme": "P2_dependency_cone",
+      "sweep": "results-chain-gemma3",
+      "unsafe_introduced": 2,
+      "unscoreable_rows": 0
+    },
+    {
+      "calls_saved_frac": 0.52138,
+      "decision_changes": 0,
+      "model": "gemma3:4b",
+      "rows": 1029,
+      "scheme": "cert_eq",
+      "sweep": "results-chain-gemma3",
+      "unsafe_introduced": 0,
+      "unscoreable_rows": 0
+    },
+    {
+      "calls_saved_frac": 0.592323,
+      "decision_changes": 0,
+      "model": "gemma3:4b",
+      "rows": 1029,
+      "scheme": "cert_safe_valid",
+      "sweep": "results-chain-gemma3",
+      "unsafe_introduced": 0,
+      "unscoreable_rows": 0
+    },
+    {
+      "calls_saved_frac": 0.577745,
+      "decision_changes": 0,
+      "model": "gemma3:4b",
+      "rows": 1029,
+      "scheme": "cert_safe_all",
+      "sweep": "results-chain-gemma3",
+      "unsafe_introduced": 0,
+      "unscoreable_rows": 0
+    },
+    {
+      "calls_saved_frac": 0.61016,
+      "decision_changes": 0,
+      "model": "phi4-mini",
+      "rows": 935,
+      "scheme": "P2_dependency_cone",
+      "sweep": "results-chain-phi4",
+      "unsafe_introduced": 0,
+      "unscoreable_rows": 30
+    },
+    {
+      "calls_saved_frac": 0.505348,
+      "decision_changes": 0,
+      "model": "phi4-mini",
+      "rows": 935,
+      "scheme": "cert_eq",
+      "sweep": "results-chain-phi4",
+      "unsafe_introduced": 0,
+      "unscoreable_rows": 30
+    },
+    {
+      "calls_saved_frac": 0.579144,
+      "decision_changes": 0,
+      "model": "phi4-mini",
+      "rows": 935,
+      "scheme": "cert_safe_valid",
+      "sweep": "results-chain-phi4",
+      "unsafe_introduced": 0,
+      "unscoreable_rows": 30
+    },
+    {
+      "calls_saved_frac": 0.562032,
+      "decision_changes": 0,
+      "model": "phi4-mini",
+      "rows": 935,
+      "scheme": "cert_safe_all",
+      "sweep": "results-chain-phi4",
+      "unsafe_introduced": 0,
+      "unscoreable_rows": 30
+    }
+  ],
+  "saved_denominator": "2*all perturbation rows; nominal slots include unscoreable rows and fail-fast missing calls",
+  "schema_version": 1
+}

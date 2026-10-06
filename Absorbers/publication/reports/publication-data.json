@@ -1,0 +1,2008 @@
+{
+  "E8_denominators": {
+    "certified_fraction": "certified_rows / all E8 rows, including unscoreable rows",
+    "saved_call_fraction": "sum of reused feeding-step slots / (2 * all E8 rows); nominal slots include fail-fast missing calls",
+    "scoreable_rows": "all E8 rows minus unscoreable rows"
+  },
+  "certificate_boundary": "cert_eq enumerates valid value classes of the fixed deterministic consumer. Invalid fresh outputs are unscoreable; no deployment guarantee or oracle-provided runtime certificate is asserted.",
+  "schema_version": 1,
+  "seed": 42,
+  "sweeps": [
+    {
+      "directory": "results",
+      "kind": "two-step",
+      "model": "deepseek-chat",
+      "n_requests": 65
+    },
+    {
+      "directory": "results-reasoner",
+      "kind": "two-step",
+      "model": "deepseek-reasoner",
+      "n_requests": 65
+    },
+    {
+      "directory": "results-local",
+      "kind": "two-step",
+      "model": "gemma3:4b",
+      "n_requests": 65
+    },
+    {
+      "E3_reuse": {
+        "alias_rows": 0,
+        "alias_wrong_known": 0,
+        "cross_step_sensitivity": {
+          "c_justify_on_request_side": {
+            "pairs": 703,
+            "record_identical": 703,
+            "record_identical_frac": 1.0
+          },
+          "c_justify_on_supplier_side": {
+            "pairs": 260,
+            "record_identical": 260,
+            "record_identical_frac": 1.0
+          },
+          "c_parse_on_justification_toggle": {
+            "pairs": 65,
+            "record_identical": 58,
+            "record_identical_frac": 0.892308
+          },
+          "c_parse_on_supplier_side": {
+            "pairs": 260,
+            "record_identical": 247,
+            "record_identical_frac": 0.95
+          }
+        },
+        "eligible_requests": 65,
+        "feeding_step_calls": 2058,
+        "nesting_P1_subset_P2": true,
+        "nesting_P2_subset_P3": false,
+        "nesting_by_step": {
+          "c_justify": {
+            "P1_subset_P2": true,
+            "P2_subset_P3": false
+          },
+          "c_parse": {
+            "P1_subset_P2": true,
+            "P2_subset_P3": false
+          }
+        },
+        "normaliser": null,
+        "per_factor": {
+          "amount": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 130
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 130
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 130,
+              "parse_reused": 0,
+              "rows": 130
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 0,
+              "justify_reused": 72,
+              "parse_reused": 72,
+              "rows": 130
+            }
+          },
+          "budget_remaining": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 130
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 130
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 130,
+              "parse_reused": 0,
+              "rows": 130
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 0,
+              "justify_reused": 116,
+              "parse_reused": 116,
+              "rows": 130
+            }
+          },
+          "category": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 184
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 184
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 183,
+              "parse_reused": 0,
+              "rows": 184
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 0,
+              "justify_reused": 136,
+              "parse_reused": 136,
+              "rows": 184
+            }
+          },
+          "data_processing": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 65
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 65
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 65,
+              "parse_reused": 0,
+              "rows": 65
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 1,
+              "justify_reused": 59,
+              "parse_reused": 59,
+              "rows": 65
+            }
+          },
+          "justification": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 65
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 65
+            },
+            "P2_dependency_cone": {
+              "diverged": 1,
+              "justify_reused": 0,
+              "parse_reused": 65,
+              "rows": 65
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 0,
+              "justify_reused": 56,
+              "parse_reused": 56,
+              "rows": 65
+            }
+          },
+          "security_review": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 65
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 65
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 65,
+              "parse_reused": 0,
+              "rows": 65
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 0,
+              "justify_reused": 57,
+              "parse_reused": 57,
+              "rows": 65
+            }
+          },
+          "supplier_approved": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 65
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 65,
+              "parse_reused": 65,
+              "rows": 65
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 65,
+              "parse_reused": 65,
+              "rows": 65
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 0,
+              "justify_reused": 6,
+              "parse_reused": 6,
+              "rows": 65
+            }
+          },
+          "supplier_risk": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 130
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 130,
+              "parse_reused": 130,
+              "rows": 130
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 130,
+              "parse_reused": 130,
+              "rows": 130
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 0,
+              "justify_reused": 106,
+              "parse_reused": 106,
+              "rows": 130
+            }
+          },
+          "supplier_sanctioned": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 65
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 65,
+              "parse_reused": 65,
+              "rows": 65
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 65,
+              "parse_reused": 65,
+              "rows": 65
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 0,
+              "justify_reused": 10,
+              "parse_reused": 10,
+              "rows": 65
+            }
+          },
+          "urgency": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 130
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 130
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 130,
+              "parse_reused": 0,
+              "rows": 130
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 1,
+              "justify_reused": 130,
+              "parse_reused": 130,
+              "rows": 130
+            }
+          }
+        },
+        "pert_rows": 1029,
+        "policies": {
+          "P0_recompute": {
+            "both_steps_saved": 0,
+            "both_steps_saved_frac": 0.0,
+            "calls_saved_frac": 0.0,
+            "calls_triggered_frac": 0.0,
+            "diverged": 0,
+            "divergence_frac": 0.0,
+            "divergence_given_any_reuse_frac": null,
+            "latency_ms_saved_total": 0.0,
+            "oracle_correct_frac": 0.992225,
+            "step_calls_saved": {
+              "c_justify": 0,
+              "c_parse": 0
+            },
+            "step_calls_triggered": {
+              "c_justify": 0,
+              "c_parse": 0
+            },
+            "tokens_saved_total": 0,
+            "unsafe_absolute": 0,
+            "unsafe_absolute_requests": 0,
+            "unsafe_introduced": 0,
+            "unsafe_request_ids": [],
+            "unsafe_requests": 0,
+            "unsafe_upper_bound_request_level": 0.046154,
+            "unscoreable_rows": 0
+          },
+          "P1_input_hash": {
+            "both_steps_saved": 260,
+            "both_steps_saved_frac": 0.252672,
+            "calls_saved_frac": 0.252672,
+            "calls_triggered_frac": 0.252672,
+            "diverged": 0,
+            "divergence_frac": 0.0,
+            "divergence_given_any_reuse_frac": 0.0,
+            "latency_ms_saved_total": 441222.8,
+            "oracle_correct_frac": 0.992225,
+            "step_calls_saved": {
+              "c_justify": 260,
+              "c_parse": 260
+            },
+            "step_calls_triggered": {
+              "c_justify": 260,
+              "c_parse": 260
+            },
+            "tokens_saved_total": 134948,
+            "unsafe_absolute": 0,
+            "unsafe_absolute_requests": 0,
+            "unsafe_introduced": 0,
+            "unsafe_request_ids": [],
+            "unsafe_requests": 0,
+            "unsafe_upper_bound_request_level": 0.046154,
+            "unscoreable_rows": 0
+          },
+          "P2_dependency_cone": {
+            "both_steps_saved": 260,
+            "both_steps_saved_frac": 0.252672,
+            "calls_saved_frac": 0.62585,
+            "calls_triggered_frac": 0.626336,
+            "diverged": 1,
+            "divergence_frac": 0.000972,
+            "divergence_given_any_reuse_frac": 0.000973,
+            "latency_ms_saved_total": 1060974.0,
+            "oracle_correct_frac": 0.991254,
+            "step_calls_saved": {
+              "c_justify": 963,
+              "c_parse": 325
+            },
+            "step_calls_triggered": {
+              "c_justify": 964,
+              "c_parse": 325
+            },
+            "tokens_saved_total": 345196,
+            "unsafe_absolute": 0,
+            "unsafe_absolute_requests": 0,
+            "unsafe_introduced": 0,
+            "unsafe_request_ids": [],
+            "unsafe_requests": 0,
+            "unsafe_upper_bound_request_level": 0.046154,
+            "unscoreable_rows": 1
+          },
+          "P3_oracle_irrelevance": {
+            "both_steps_saved": 748,
+            "both_steps_saved_frac": 0.726919,
+            "calls_saved_frac": 0.726919,
+            "calls_triggered_frac": 0.726919,
+            "diverged": 2,
+            "divergence_frac": 0.001944,
+            "divergence_given_any_reuse_frac": 0.002674,
+            "latency_ms_saved_total": 1276070.3,
+            "oracle_correct_frac": 0.994169,
+            "step_calls_saved": {
+              "c_justify": 748,
+              "c_parse": 748
+            },
+            "step_calls_triggered": {
+              "c_justify": 748,
+              "c_parse": 748
+            },
+            "tokens_saved_total": 388632,
+            "unsafe_absolute": 0,
+            "unsafe_absolute_requests": 0,
+            "unsafe_introduced": 0,
+            "unsafe_request_ids": [],
+            "unsafe_requests": 0,
+            "unsafe_upper_bound_request_level": 0.046154,
+            "unscoreable_rows": 0
+          }
+        },
+        "rows_changed": 0,
+        "skipped_invalid_canon": 0,
+        "step_cost": {
+          "c_justify": {
+            "mean_latency_ms": 796.020525,
+            "mean_tokens": 276.595331
+          },
+          "c_parse": {
+            "mean_latency_ms": 918.851895,
+            "mean_tokens": 242.671526
+          }
+        }
+      },
+      "E5_canary": {
+        "c_justify": {
+          "defined": true,
+          "detectable": false,
+          "mismatching_requests": 0,
+          "pair_mismatch_profile": {
+            "0/4": 65
+          },
+          "per_recompute": {
+            "detection_ceiling": 0.0,
+            "detection_prob_at_k": {
+              "1": 0.0,
+              "10": 0.0,
+              "2": 0.0,
+              "20": 0.0,
+              "3": 0.0,
+              "5": 0.0
+            },
+            "detection_prob_at_k95": null,
+            "k_for_95": null,
+            "k_for_95_frac_of_requests": null,
+            "unreachable": false
+          },
+          "requests": 65,
+          "upper_bound": {
+            "detection_ceiling": 0.0,
+            "detection_prob_at_k": {
+              "1": 0.0,
+              "10": 0.0,
+              "2": 0.0,
+              "20": 0.0,
+              "3": 0.0,
+              "5": 0.0
+            },
+            "detection_prob_at_k95": null,
+            "k_for_95": null,
+            "k_for_95_frac_of_requests": null,
+            "unreachable": false
+          }
+        },
+        "c_parse": {
+          "defined": true,
+          "detectable": true,
+          "mismatching_requests": 4,
+          "pair_mismatch_profile": {
+            "0/4": 61,
+            "2/4": 1,
+            "3/4": 1,
+            "4/4": 2
+          },
+          "per_recompute": {
+            "detection_ceiling": 1.0,
+            "detection_prob_at_k": {
+              "1": 0.05,
+              "10": 0.421544,
+              "2": 0.098137,
+              "20": 0.695548,
+              "3": 0.144457,
+              "5": 0.231825
+            },
+            "detection_prob_at_k95": 0.954359,
+            "k_for_95": 41,
+            "k_for_95_frac_of_requests": 0.630769,
+            "unreachable": false
+          },
+          "requests": 65,
+          "upper_bound": {
+            "detection_ceiling": 1.0,
+            "detection_prob_at_k": {
+              "1": 0.061538,
+              "10": 0.496256,
+              "2": 0.120192,
+              "20": 0.779932,
+              "3": 0.176053,
+              "5": 0.279755
+            },
+            "detection_prob_at_k95": 0.953526,
+            "k_for_95": 34,
+            "k_for_95_frac_of_requests": 0.523077,
+            "unreachable": false
+          }
+        }
+      },
+      "E8_decomposition": {
+        "certificates": {
+          "candidate_rows_by_step": {
+            "c_justify": 963,
+            "c_parse": 325
+          },
+          "cone_matches_p2_trigger_on_every_row": true,
+          "cone_mismatch_rows": 0,
+          "decision_inert_fields": [
+            "urgency",
+            "justification_category"
+          ],
+          "rows": 1029,
+          "rows_fresh_invalid": 1,
+          "schemes": {
+            "cert_eq": {
+              "calls_saved_frac": 0.508746,
+              "certified_frac": 0.827988,
+              "certified_rows": 852,
+              "certified_rows_fresh_invalid": 0,
+              "decision_changes": 0,
+              "decision_changes_fresh_valid": 0,
+              "oracle_correct_frac": 0.991784,
+              "step_calls_reused": {
+                "c_justify": 827,
+                "c_parse": 220
+              },
+              "unsafe_introduced": 0,
+              "unsafe_request_ids": [],
+              "unsafe_requests": 0
+            },
+            "cert_safe_all": {
+              "calls_saved_frac": 0.567541,
+              "certified_frac": 0.901846,
+              "certified_rows": 928,
+              "certified_rows_fresh_invalid": 0,
+              "decision_changes": 1,
+              "decision_changes_fresh_valid": 1,
+              "oracle_correct_frac": 0.990302,
+              "step_calls_reused": {
+                "c_justify": 867,
+                "c_parse": 301
+              },
+              "unsafe_introduced": 0,
+              "unsafe_request_ids": [],
+              "unsafe_requests": 0
+            },
+            "cert_safe_valid": {
+              "calls_saved_frac": 0.58552,
+              "certified_frac": 0.937804,
+              "certified_rows": 965,
+              "certified_rows_fresh_invalid": 0,
+              "decision_changes": 1,
+              "decision_changes_fresh_valid": 1,
+              "oracle_correct_frac": 0.990674,
+              "step_calls_reused": {
+                "c_justify": 904,
+                "c_parse": 301
+              },
+              "unsafe_introduced": 0,
+              "unsafe_request_ids": [],
+              "unsafe_requests": 0
+            }
+          },
+          "unscoreable_rows": 1,
+          "unscoreable_rows_where_a_candidate_step_was_invalid": 0
+        },
+        "fields": {
+          "eligible_requests": 65,
+          "per_step": {
+            "c_justify": {
+              "cells": {
+                "functional_correct_inert": 116,
+                "functional_correct_loadbearing": 8,
+                "varying_correct_inert": 6
+              },
+              "field_cells_total": 130,
+              "functional_wrong_loadbearing_requests": [],
+              "per_field": {
+                "justification_adequate": {
+                  "correct": 65,
+                  "functional": 62,
+                  "load_bearing": 8
+                },
+                "justification_category": {
+                  "correct": 65,
+                  "functional": 62,
+                  "load_bearing": 0
+                }
+              }
+            },
+            "c_parse": {
+              "cells": {
+                "functional_correct_inert": 295,
+                "functional_correct_loadbearing": 62,
+                "varying_correct_inert": 26,
+                "varying_correct_loadbearing": 2,
+                "varying_wrong_inert": 4,
+                "varying_wrong_loadbearing": 1
+              },
+              "field_cells_total": 390,
+              "functional_wrong_loadbearing_requests": [],
+              "per_field": {
+                "amount": {
+                  "correct": 65,
+                  "functional": 63,
+                  "load_bearing": 28
+                },
+                "budget_remaining": {
+                  "correct": 65,
+                  "functional": 63,
+                  "load_bearing": 7
+                },
+                "category": {
+                  "correct": 60,
+                  "functional": 53,
+                  "load_bearing": 18
+                },
+                "data_processing": {
+                  "correct": 65,
+                  "functional": 63,
+                  "load_bearing": 5
+                },
+                "security_review": {
+                  "correct": 65,
+                  "functional": 63,
+                  "load_bearing": 7
+                },
+                "urgency": {
+                  "correct": 65,
+                  "functional": 52,
+                  "load_bearing": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "directory": "results-chain-deepseek",
+      "kind": "chain",
+      "model": "deepseek-chat",
+      "n_requests": 65
+    },
+    {
+      "E3_reuse": {
+        "alias_rows": 0,
+        "alias_wrong_known": 0,
+        "cross_step_sensitivity": {
+          "c_justify_on_request_side": {
+            "pairs": 704,
+            "record_identical": 667,
+            "record_identical_frac": 0.947443
+          },
+          "c_justify_on_supplier_side": {
+            "pairs": 260,
+            "record_identical": 260,
+            "record_identical_frac": 1.0
+          },
+          "c_parse_on_justification_toggle": {
+            "pairs": 65,
+            "record_identical": 63,
+            "record_identical_frac": 0.969231
+          },
+          "c_parse_on_supplier_side": {
+            "pairs": 260,
+            "record_identical": 260,
+            "record_identical_frac": 1.0
+          }
+        },
+        "eligible_requests": 65,
+        "feeding_step_calls": 2058,
+        "nesting_P1_subset_P2": true,
+        "nesting_P2_subset_P3": false,
+        "nesting_by_step": {
+          "c_justify": {
+            "P1_subset_P2": true,
+            "P2_subset_P3": false
+          },
+          "c_parse": {
+            "P1_subset_P2": true,
+            "P2_subset_P3": false
+          }
+        },
+        "normaliser": null,
+        "per_factor": {
+          "amount": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 130
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 130
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 130,
+              "parse_reused": 0,
+              "rows": 130
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 0,
+              "justify_reused": 72,
+              "parse_reused": 72,
+              "rows": 130
+            }
+          },
+          "budget_remaining": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 130
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 130
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 130,
+              "parse_reused": 0,
+              "rows": 130
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 1,
+              "justify_reused": 116,
+              "parse_reused": 116,
+              "rows": 130
+            }
+          },
+          "category": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 184
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 184
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 184,
+              "parse_reused": 0,
+              "rows": 184
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 1,
+              "justify_reused": 136,
+              "parse_reused": 136,
+              "rows": 184
+            }
+          },
+          "data_processing": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 65
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 65
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 65,
+              "parse_reused": 0,
+              "rows": 65
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 0,
+              "justify_reused": 59,
+              "parse_reused": 59,
+              "rows": 65
+            }
+          },
+          "justification": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 65
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 65
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 65,
+              "rows": 65
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 0,
+              "justify_reused": 56,
+              "parse_reused": 56,
+              "rows": 65
+            }
+          },
+          "security_review": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 65
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 65
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 65,
+              "parse_reused": 0,
+              "rows": 65
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 4,
+              "justify_reused": 57,
+              "parse_reused": 57,
+              "rows": 65
+            }
+          },
+          "supplier_approved": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 65
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 65,
+              "parse_reused": 65,
+              "rows": 65
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 65,
+              "parse_reused": 65,
+              "rows": 65
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 0,
+              "justify_reused": 6,
+              "parse_reused": 6,
+              "rows": 65
+            }
+          },
+          "supplier_risk": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 130
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 130,
+              "parse_reused": 130,
+              "rows": 130
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 130,
+              "parse_reused": 130,
+              "rows": 130
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 0,
+              "justify_reused": 106,
+              "parse_reused": 106,
+              "rows": 130
+            }
+          },
+          "supplier_sanctioned": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 65
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 65,
+              "parse_reused": 65,
+              "rows": 65
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 65,
+              "parse_reused": 65,
+              "rows": 65
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 0,
+              "justify_reused": 10,
+              "parse_reused": 10,
+              "rows": 65
+            }
+          },
+          "urgency": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 130
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 130
+            },
+            "P2_dependency_cone": {
+              "diverged": 2,
+              "justify_reused": 130,
+              "parse_reused": 0,
+              "rows": 130
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 3,
+              "justify_reused": 130,
+              "parse_reused": 130,
+              "rows": 130
+            }
+          }
+        },
+        "pert_rows": 1029,
+        "policies": {
+          "P0_recompute": {
+            "both_steps_saved": 0,
+            "both_steps_saved_frac": 0.0,
+            "calls_saved_frac": 0.0,
+            "calls_triggered_frac": 0.0,
+            "diverged": 0,
+            "divergence_frac": 0.0,
+            "divergence_given_any_reuse_frac": null,
+            "latency_ms_saved_total": 0.0,
+            "oracle_correct_frac": 0.964043,
+            "step_calls_saved": {
+              "c_justify": 0,
+              "c_parse": 0
+            },
+            "step_calls_triggered": {
+              "c_justify": 0,
+              "c_parse": 0
+            },
+            "tokens_saved_total": 0,
+            "unsafe_absolute": 4,
+            "unsafe_absolute_requests": 2,
+            "unsafe_introduced": 0,
+            "unsafe_request_ids": [],
+            "unsafe_requests": 0,
+            "unsafe_upper_bound_request_level": 0.046154,
+            "unscoreable_rows": 0
+          },
+          "P1_input_hash": {
+            "both_steps_saved": 260,
+            "both_steps_saved_frac": 0.252672,
+            "calls_saved_frac": 0.252672,
+            "calls_triggered_frac": 0.252672,
+            "diverged": 0,
+            "divergence_frac": 0.0,
+            "divergence_given_any_reuse_frac": 0.0,
+            "latency_ms_saved_total": 1909985.3,
+            "oracle_correct_frac": 0.964043,
+            "step_calls_saved": {
+              "c_justify": 260,
+              "c_parse": 260
+            },
+            "step_calls_triggered": {
+              "c_justify": 260,
+              "c_parse": 260
+            },
+            "tokens_saved_total": 153168,
+            "unsafe_absolute": 4,
+            "unsafe_absolute_requests": 2,
+            "unsafe_introduced": 0,
+            "unsafe_request_ids": [],
+            "unsafe_requests": 0,
+            "unsafe_upper_bound_request_level": 0.046154,
+            "unscoreable_rows": 0
+          },
+          "P2_dependency_cone": {
+            "both_steps_saved": 260,
+            "both_steps_saved_frac": 0.252672,
+            "calls_saved_frac": 0.626336,
+            "calls_triggered_frac": 0.626336,
+            "diverged": 2,
+            "divergence_frac": 0.001944,
+            "divergence_given_any_reuse_frac": 0.001944,
+            "latency_ms_saved_total": 4407621.5,
+            "oracle_correct_frac": 0.962099,
+            "step_calls_saved": {
+              "c_justify": 964,
+              "c_parse": 325
+            },
+            "step_calls_triggered": {
+              "c_justify": 964,
+              "c_parse": 325
+            },
+            "tokens_saved_total": 387791,
+            "unsafe_absolute": 6,
+            "unsafe_absolute_requests": 2,
+            "unsafe_introduced": 2,
+            "unsafe_request_ids": [
+              "req-008-clean_approve"
+            ],
+            "unsafe_requests": 1,
+            "unsafe_upper_bound_request_level": null,
+            "unscoreable_rows": 0
+          },
+          "P3_oracle_irrelevance": {
+            "both_steps_saved": 748,
+            "both_steps_saved_frac": 0.726919,
+            "calls_saved_frac": 0.726919,
+            "calls_triggered_frac": 0.726919,
+            "diverged": 9,
+            "divergence_frac": 0.008746,
+            "divergence_given_any_reuse_frac": 0.012032,
+            "latency_ms_saved_total": 5669488.1,
+            "oracle_correct_frac": 0.961127,
+            "step_calls_saved": {
+              "c_justify": 748,
+              "c_parse": 748
+            },
+            "step_calls_triggered": {
+              "c_justify": 748,
+              "c_parse": 748
+            },
+            "tokens_saved_total": 440723,
+            "unsafe_absolute": 7,
+            "unsafe_absolute_requests": 1,
+            "unsafe_introduced": 4,
+            "unsafe_request_ids": [
+              "req-008-clean_approve"
+            ],
+            "unsafe_requests": 1,
+            "unsafe_upper_bound_request_level": null,
+            "unscoreable_rows": 0
+          }
+        },
+        "rows_changed": 0,
+        "skipped_invalid_canon": 0,
+        "step_cost": {
+          "c_justify": {
+            "mean_latency_ms": 2972.597765,
+            "mean_tokens": 307.348882
+          },
+          "c_parse": {
+            "mean_latency_ms": 4887.960739,
+            "mean_tokens": 281.52381
+          }
+        }
+      },
+      "E5_canary": {
+        "c_justify": {
+          "defined": true,
+          "detectable": false,
+          "mismatching_requests": 0,
+          "pair_mismatch_profile": {
+            "0/4": 65
+          },
+          "per_recompute": {
+            "detection_ceiling": 0.0,
+            "detection_prob_at_k": {
+              "1": 0.0,
+              "10": 0.0,
+              "2": 0.0,
+              "20": 0.0,
+              "3": 0.0,
+              "5": 0.0
+            },
+            "detection_prob_at_k95": null,
+            "k_for_95": null,
+            "k_for_95_frac_of_requests": null,
+            "unreachable": false
+          },
+          "requests": 65,
+          "upper_bound": {
+            "detection_ceiling": 0.0,
+            "detection_prob_at_k": {
+              "1": 0.0,
+              "10": 0.0,
+              "2": 0.0,
+              "20": 0.0,
+              "3": 0.0,
+              "5": 0.0
+            },
+            "detection_prob_at_k95": null,
+            "k_for_95": null,
+            "k_for_95_frac_of_requests": null,
+            "unreachable": false
+          }
+        },
+        "c_parse": {
+          "defined": true,
+          "detectable": false,
+          "mismatching_requests": 0,
+          "pair_mismatch_profile": {
+            "0/4": 65
+          },
+          "per_recompute": {
+            "detection_ceiling": 0.0,
+            "detection_prob_at_k": {
+              "1": 0.0,
+              "10": 0.0,
+              "2": 0.0,
+              "20": 0.0,
+              "3": 0.0,
+              "5": 0.0
+            },
+            "detection_prob_at_k95": null,
+            "k_for_95": null,
+            "k_for_95_frac_of_requests": null,
+            "unreachable": false
+          },
+          "requests": 65,
+          "upper_bound": {
+            "detection_ceiling": 0.0,
+            "detection_prob_at_k": {
+              "1": 0.0,
+              "10": 0.0,
+              "2": 0.0,
+              "20": 0.0,
+              "3": 0.0,
+              "5": 0.0
+            },
+            "detection_prob_at_k95": null,
+            "k_for_95": null,
+            "k_for_95_frac_of_requests": null,
+            "unreachable": false
+          }
+        }
+      },
+      "E8_decomposition": {
+        "certificates": {
+          "candidate_rows_by_step": {
+            "c_justify": 964,
+            "c_parse": 325
+          },
+          "cone_matches_p2_trigger_on_every_row": true,
+          "cone_mismatch_rows": 0,
+          "decision_inert_fields": [
+            "urgency",
+            "justification_category"
+          ],
+          "rows": 1029,
+          "rows_fresh_invalid": 0,
+          "schemes": {
+            "cert_eq": {
+              "calls_saved_frac": 0.52138,
+              "certified_frac": 0.853256,
+              "certified_rows": 878,
+              "certified_rows_fresh_invalid": 0,
+              "decision_changes": 0,
+              "decision_changes_fresh_valid": 0,
+              "oracle_correct_frac": 0.971526,
+              "step_calls_reused": {
+                "c_justify": 853,
+                "c_parse": 220
+              },
+              "unsafe_introduced": 0,
+              "unsafe_request_ids": [],
+              "unsafe_requests": 0
+            },
+            "cert_safe_all": {
+              "calls_saved_frac": 0.577745,
+              "certified_frac": 0.920311,
+              "certified_rows": 947,
+              "certified_rows_fresh_invalid": 0,
+              "decision_changes": 0,
+              "decision_changes_fresh_valid": 0,
+              "oracle_correct_frac": 0.965153,
+              "step_calls_reused": {
+                "c_justify": 883,
+                "c_parse": 306
+              },
+              "unsafe_introduced": 0,
+              "unsafe_request_ids": [],
+              "unsafe_requests": 0
+            },
+            "cert_safe_valid": {
+              "calls_saved_frac": 0.592323,
+              "certified_frac": 0.949466,
+              "certified_rows": 977,
+              "certified_rows_fresh_invalid": 0,
+              "decision_changes": 0,
+              "decision_changes_fresh_valid": 0,
+              "oracle_correct_frac": 0.966223,
+              "step_calls_reused": {
+                "c_justify": 913,
+                "c_parse": 306
+              },
+              "unsafe_introduced": 0,
+              "unsafe_request_ids": [],
+              "unsafe_requests": 0
+            }
+          },
+          "unscoreable_rows": 0,
+          "unscoreable_rows_where_a_candidate_step_was_invalid": 0
+        },
+        "fields": {
+          "eligible_requests": 65,
+          "per_step": {
+            "c_justify": {
+              "cells": {
+                "functional_correct_inert": 86,
+                "functional_correct_loadbearing": 4,
+                "functional_wrong_inert": 32,
+                "functional_wrong_loadbearing": 1,
+                "varying_correct_inert": 5,
+                "varying_wrong_inert": 2
+              },
+              "field_cells_total": 130,
+              "functional_wrong_loadbearing_requests": [
+                {
+                  "cone_reuse_rows": 14,
+                  "field": "justification_adequate",
+                  "fresh_output_moved_rows": 4,
+                  "request": "req-008-clean_approve"
+                }
+              ],
+              "per_field": {
+                "justification_adequate": {
+                  "correct": 63,
+                  "functional": 64,
+                  "load_bearing": 5
+                },
+                "justification_category": {
+                  "correct": 32,
+                  "functional": 59,
+                  "load_bearing": 0
+                }
+              }
+            },
+            "c_parse": {
+              "cells": {
+                "functional_correct_inert": 320,
+                "functional_correct_loadbearing": 52,
+                "functional_wrong_inert": 16,
+                "functional_wrong_loadbearing": 1,
+                "varying_wrong_loadbearing": 1
+              },
+              "field_cells_total": 390,
+              "functional_wrong_loadbearing_requests": [
+                {
+                  "cone_reuse_rows": 5,
+                  "field": "category",
+                  "fresh_output_moved_rows": 0,
+                  "request": "req-006-clean_approve"
+                }
+              ],
+              "per_field": {
+                "amount": {
+                  "correct": 64,
+                  "functional": 65,
+                  "load_bearing": 22
+                },
+                "budget_remaining": {
+                  "correct": 64,
+                  "functional": 65,
+                  "load_bearing": 6
+                },
+                "category": {
+                  "correct": 53,
+                  "functional": 65,
+                  "load_bearing": 15
+                },
+                "data_processing": {
+                  "correct": 61,
+                  "functional": 64,
+                  "load_bearing": 4
+                },
+                "security_review": {
+                  "correct": 65,
+                  "functional": 65,
+                  "load_bearing": 7
+                },
+                "urgency": {
+                  "correct": 65,
+                  "functional": 65,
+                  "load_bearing": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "directory": "results-chain-gemma3",
+      "kind": "chain",
+      "model": "gemma3:4b",
+      "n_requests": 65
+    },
+    {
+      "E3_reuse": {
+        "alias_rows": 0,
+        "alias_wrong_known": 0,
+        "cross_step_sensitivity": {
+          "c_justify_on_request_side": {
+            "pairs": 613,
+            "record_identical": 580,
+            "record_identical_frac": 0.946166
+          },
+          "c_justify_on_supplier_side": {
+            "pairs": 236,
+            "record_identical": 234,
+            "record_identical_frac": 0.991525
+          },
+          "c_parse_on_justification_toggle": {
+            "pairs": 56,
+            "record_identical": 56,
+            "record_identical_frac": 1.0
+          },
+          "c_parse_on_supplier_side": {
+            "pairs": 236,
+            "record_identical": 236,
+            "record_identical_frac": 1.0
+          }
+        },
+        "eligible_requests": 59,
+        "feeding_step_calls": 1870,
+        "nesting_P1_subset_P2": true,
+        "nesting_P2_subset_P3": false,
+        "nesting_by_step": {
+          "c_justify": {
+            "P1_subset_P2": true,
+            "P2_subset_P3": false
+          },
+          "c_parse": {
+            "P1_subset_P2": true,
+            "P2_subset_P3": false
+          }
+        },
+        "normaliser": null,
+        "per_factor": {
+          "amount": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 118
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 118
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 118,
+              "parse_reused": 0,
+              "rows": 118
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 0,
+              "justify_reused": 66,
+              "parse_reused": 66,
+              "rows": 118
+            }
+          },
+          "budget_remaining": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 118
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 118
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 117,
+              "parse_reused": 0,
+              "rows": 118
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 1,
+              "justify_reused": 106,
+              "parse_reused": 106,
+              "rows": 118
+            }
+          },
+          "category": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 168
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 168
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 149,
+              "parse_reused": 0,
+              "rows": 168
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 5,
+              "justify_reused": 128,
+              "parse_reused": 128,
+              "rows": 168
+            }
+          },
+          "data_processing": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 59
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 59
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 59,
+              "parse_reused": 0,
+              "rows": 59
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 0,
+              "justify_reused": 53,
+              "parse_reused": 53,
+              "rows": 59
+            }
+          },
+          "justification": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 59
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 59
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 56,
+              "rows": 59
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 1,
+              "justify_reused": 52,
+              "parse_reused": 52,
+              "rows": 59
+            }
+          },
+          "security_review": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 59
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 59
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 58,
+              "parse_reused": 0,
+              "rows": 59
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 1,
+              "justify_reused": 51,
+              "parse_reused": 51,
+              "rows": 59
+            }
+          },
+          "supplier_approved": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 59
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 59,
+              "parse_reused": 59,
+              "rows": 59
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 59,
+              "parse_reused": 59,
+              "rows": 59
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 0,
+              "justify_reused": 6,
+              "parse_reused": 6,
+              "rows": 59
+            }
+          },
+          "supplier_risk": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 118
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 118,
+              "parse_reused": 118,
+              "rows": 118
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 118,
+              "parse_reused": 118,
+              "rows": 118
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 0,
+              "justify_reused": 96,
+              "parse_reused": 96,
+              "rows": 118
+            }
+          },
+          "supplier_sanctioned": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 59
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 59,
+              "parse_reused": 59,
+              "rows": 59
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 59,
+              "parse_reused": 59,
+              "rows": 59
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 0,
+              "justify_reused": 8,
+              "parse_reused": 8,
+              "rows": 59
+            }
+          },
+          "urgency": {
+            "P0_recompute": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 118
+            },
+            "P1_input_hash": {
+              "diverged": 0,
+              "justify_reused": 0,
+              "parse_reused": 0,
+              "rows": 118
+            },
+            "P2_dependency_cone": {
+              "diverged": 0,
+              "justify_reused": 112,
+              "parse_reused": 0,
+              "rows": 118
+            },
+            "P3_oracle_irrelevance": {
+              "diverged": 1,
+              "justify_reused": 118,
+              "parse_reused": 118,
+              "rows": 118
+            }
+          }
+        },
+        "pert_rows": 935,
+        "policies": {
+          "P0_recompute": {
+            "both_steps_saved": 0,
+            "both_steps_saved_frac": 0.0,
+            "calls_saved_frac": 0.0,
+            "calls_triggered_frac": 0.0,
+            "diverged": 0,
+            "divergence_frac": 0.0,
+            "divergence_given_any_reuse_frac": null,
+            "latency_ms_saved_total": 0.0,
+            "oracle_correct_frac": 0.970053,
+            "step_calls_saved": {
+              "c_justify": 0,
+              "c_parse": 0
+            },
+            "step_calls_triggered": {
+              "c_justify": 0,
+              "c_parse": 0
+            },
+            "tokens_saved_total": 0,
+            "unsafe_absolute": 0,
+            "unsafe_absolute_requests": 0,
+            "unsafe_introduced": 0,
+            "unsafe_request_ids": [],
+            "unsafe_requests": 0,
+            "unsafe_upper_bound_request_level": 0.050847,
+            "unscoreable_rows": 0
+          },
+          "P1_input_hash": {
+            "both_steps_saved": 236,
+            "both_steps_saved_frac": 0.252406,
+            "calls_saved_frac": 0.252406,
+            "calls_triggered_frac": 0.252406,
+            "diverged": 0,
+            "divergence_frac": 0.0,
+            "divergence_given_any_reuse_frac": 0.0,
+            "latency_ms_saved_total": 2019610.1,
+            "oracle_correct_frac": 0.970053,
+            "step_calls_saved": {
+              "c_justify": 236,
+              "c_parse": 236
+            },
+            "step_calls_triggered": {
+              "c_justify": 236,
+              "c_parse": 236
+            },
+            "tokens_saved_total": 123468,
+            "unsafe_absolute": 0,
+            "unsafe_absolute_requests": 0,
+            "unsafe_introduced": 0,
+            "unsafe_request_ids": [],
+            "unsafe_requests": 0,
+            "unsafe_upper_bound_request_level": 0.050847,
+            "unscoreable_rows": 0
+          },
+          "P2_dependency_cone": {
+            "both_steps_saved": 236,
+            "both_steps_saved_frac": 0.252406,
+            "calls_saved_frac": 0.61016,
+            "calls_triggered_frac": 0.626203,
+            "diverged": 0,
+            "divergence_frac": 0.0,
+            "divergence_given_any_reuse_frac": 0.0,
+            "latency_ms_saved_total": 4706898.6,
+            "oracle_correct_frac": 0.970053,
+            "step_calls_saved": {
+              "c_justify": 849,
+              "c_parse": 292
+            },
+            "step_calls_triggered": {
+              "c_justify": 876,
+              "c_parse": 295
+            },
+            "tokens_saved_total": 310469,
+            "unsafe_absolute": 0,
+            "unsafe_absolute_requests": 0,
+            "unsafe_introduced": 0,
+            "unsafe_request_ids": [],
+            "unsafe_requests": 0,
+            "unsafe_upper_bound_request_level": 0.050847,
+            "unscoreable_rows": 30
+          },
+          "P3_oracle_irrelevance": {
+            "both_steps_saved": 684,
+            "both_steps_saved_frac": 0.731551,
+            "calls_saved_frac": 0.731551,
+            "calls_triggered_frac": 0.731551,
+            "diverged": 9,
+            "divergence_frac": 0.009626,
+            "divergence_given_any_reuse_frac": 0.013158,
+            "latency_ms_saved_total": 6007795.1,
+            "oracle_correct_frac": 0.979679,
+            "step_calls_saved": {
+              "c_justify": 684,
+              "c_parse": 684
+            },
+            "step_calls_triggered": {
+              "c_justify": 684,
+              "c_parse": 684
+            },
+            "tokens_saved_total": 350842,
+            "unsafe_absolute": 0,
+            "unsafe_absolute_requests": 0,
+            "unsafe_introduced": 0,
+            "unsafe_request_ids": [],
+            "unsafe_requests": 0,
+            "unsafe_upper_bound_request_level": 0.050847,
+            "unscoreable_rows": 0
+          }
+        },
+        "rows_changed": 0,
+        "skipped_invalid_canon": 6,
+        "step_cost": {
+          "c_justify": {
+            "mean_latency_ms": 3870.688177,
+            "mean_tokens": 283.053039
+          },
+          "c_parse": {
+            "mean_latency_ms": 5071.192941,
+            "mean_tokens": 240.351872
+          }
+        }
+      },
+      "E5_canary": {
+        "c_justify": {
+          "defined": true,
+          "detectable": true,
+          "mismatching_requests": 1,
+          "pair_mismatch_profile": {
+            "0/4": 58,
+            "2/4": 1
+          },
+          "per_recompute": {
+            "detection_ceiling": 0.5,
+            "detection_prob_at_k": {
+              "1": 0.008475,
+              "10": 0.084746,
+              "2": 0.016949,
+              "20": 0.169492,
+              "3": 0.025424,
+              "5": 0.042373
+            },
+            "detection_prob_at_k95": null,
+            "k_for_95": null,
+            "k_for_95_frac_of_requests": null,
+            "unreachable": true
+          },
+          "requests": 59,
+          "upper_bound": {
+            "detection_ceiling": 1.0,
+            "detection_prob_at_k": {
+              "1": 0.016949,
+              "10": 0.169492,
+              "2": 0.033898,
+              "20": 0.338983,
+              "3": 0.050847,
+              "5": 0.084746
+            },
+            "detection_prob_at_k95": 0.966102,
+            "k_for_95": 57,
+            "k_for_95_frac_of_requests": 0.966102,
+            "unreachable": false
+          }
+        },
+        "c_parse": {
+          "defined": true,
+          "detectable": false,
+          "mismatching_requests": 0,
+          "pair_mismatch_profile": {
+            "0/4": 59
+          },
+          "per_recompute": {
+            "detection_ceiling": 0.0,
+            "detection_prob_at_k": {
+              "1": 0.0,
+              "10": 0.0,
+              "2": 0.0,
+              "20": 0.0,
+              "3": 0.0,
+              "5": 0.0
+            },
+            "detection_prob_at_k95": null,
+            "k_for_95": null,
+            "k_for_95_frac_of_requests": null,
+            "unreachable": false
+          },
+          "requests": 59,
+          "upper_bound": {
+            "detection_ceiling": 0.0,
+            "detection_prob_at_k": {
+              "1": 0.0,
+              "10": 0.0,
+              "2": 0.0,
+              "20": 0.0,
+              "3": 0.0,
+              "5": 0.0
+            },
+            "detection_prob_at_k95": null,
+            "k_for_95": null,
+            "k_for_95_frac_of_requests": null,
+            "unreachable": false
+          }
+        }
+      },
+      "E8_decomposition": {
+        "certificates": {
+          "candidate_rows_by_step": {
+            "c_justify": 849,
+            "c_parse": 292
+          },
+          "cone_matches_p2_trigger_on_every_row": true,
+          "cone_mismatch_rows": 0,
+          "decision_inert_fields": [
+            "urgency",
+            "justification_category"
+          ],
+          "rows": 935,
+          "rows_fresh_invalid": 30,
+          "schemes": {
+            "cert_eq": {
+              "calls_saved_frac": 0.505348,
+              "certified_frac": 0.82139,
+              "certified_rows": 768,
+              "certified_rows_fresh_invalid": 0,
+              "decision_changes": 0,
+              "decision_changes_fresh_valid": 0,
+              "oracle_correct_frac": 0.983073,
+              "step_calls_reused": {
+                "c_justify": 747,
+                "c_parse": 198
+              },
+              "unsafe_introduced": 0,
+              "unsafe_request_ids": [],
+              "unsafe_requests": 0
+            },
+            "cert_safe_all": {
+              "calls_saved_frac": 0.562032,
+              "certified_frac": 0.887701,
+              "certified_rows": 830,
+              "certified_rows_fresh_invalid": 0,
+              "decision_changes": 0,
+              "decision_changes_fresh_valid": 0,
+              "oracle_correct_frac": 0.977108,
+              "step_calls_reused": {
+                "c_justify": 775,
+                "c_parse": 276
+              },
+              "unsafe_introduced": 0,
+              "unsafe_request_ids": [],
+              "unsafe_requests": 0
+            },
+            "cert_safe_valid": {
+              "calls_saved_frac": 0.579144,
+              "certified_frac": 0.921925,
+              "certified_rows": 862,
+              "certified_rows_fresh_invalid": 0,
+              "decision_changes": 0,
+              "decision_changes_fresh_valid": 0,
+              "oracle_correct_frac": 0.977958,
+              "step_calls_reused": {
+                "c_justify": 807,
+                "c_parse": 276
+              },
+              "unsafe_introduced": 0,
+              "unsafe_request_ids": [],
+              "unsafe_requests": 0
+            }
+          },
+          "unscoreable_rows": 30,
+          "unscoreable_rows_where_a_candidate_step_was_invalid": 3
+        },
+        "fields": {
+          "eligible_requests": 59,
+          "per_step": {
+            "c_justify": {
+              "cells": {
+                "functional_correct_inert": 29,
+                "functional_correct_loadbearing": 2,
+                "functional_wrong_inert": 4,
+                "varying_correct_inert": 56,
+                "varying_correct_loadbearing": 2,
+                "varying_wrong_inert": 25
+              },
+              "field_cells_total": 118,
+              "functional_wrong_loadbearing_requests": [],
+              "per_field": {
+                "justification_adequate": {
+                  "correct": 59,
+                  "functional": 20,
+                  "load_bearing": 4
+                },
+                "justification_category": {
+                  "correct": 30,
+                  "functional": 15,
+                  "load_bearing": 0
+                }
+              }
+            },
+            "c_parse": {
+              "cells": {
+                "functional_correct_inert": 137,
+                "functional_correct_loadbearing": 30,
+                "functional_wrong_inert": 5,
+                "varying_correct_inert": 157,
+                "varying_correct_loadbearing": 18,
+                "varying_wrong_inert": 5,
+                "varying_wrong_loadbearing": 2
+              },
+              "field_cells_total": 354,
+              "functional_wrong_loadbearing_requests": [],
+              "per_field": {
+                "amount": {
+                  "correct": 59,
+                  "functional": 30,
+                  "load_bearing": 21
+                },
+                "budget_remaining": {
+                  "correct": 59,
+                  "functional": 31,
+                  "load_bearing": 5
+                },
+                "category": {
+                  "correct": 47,
+                  "functional": 25,
+                  "load_bearing": 15
+                },
+                "data_processing": {
+                  "correct": 59,
+                  "functional": 26,
+                  "load_bearing": 4
+                },
+                "security_review": {
+                  "correct": 59,
+                  "functional": 31,
+                  "load_bearing": 5
+                },
+                "urgency": {
+                  "correct": 59,
+                  "functional": 29,
+                  "load_bearing": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "directory": "results-chain-phi4",
+      "kind": "chain",
+      "model": "phi4-mini",
+      "n_requests": 65
+    }
+  ]
+}

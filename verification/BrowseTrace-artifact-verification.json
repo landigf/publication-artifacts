@@ -1,0 +1,47 @@
+{
+  "hashed_files": 48,
+  "census_rows": 1621,
+  "liveness_rows": 1611,
+  "credential_fields": 0,
+  "trace_accounting": [
+    {
+      "workload": "scripted",
+      "rows": 82455,
+      "effective_requests": 82455,
+      "effective_bytes": 2236749954
+    },
+    {
+      "workload": "llm",
+      "rows": 357782,
+      "effective_requests": 236073,
+      "effective_bytes": 4587491218
+    }
+  ],
+  "checks": [
+    "explicit file hashes",
+    "unique census and liveness IDs",
+    "opaque keys/session labels",
+    "nonnegative sizes and positive-size denominators",
+    "census/liveness projection agreement",
+    "collection metadata denominators",
+    "derived statistics",
+    "complete six-policy/five-capacity matrix",
+    "source/export equality evidence",
+    "credential-removal negative fixture",
+    "bounded-capacity six-policy repeated-scan fixture",
+    "bounded-capacity LRU fixture",
+    "zero-size exclusion fixture",
+    "six-policy resident-size-on-hit fixture",
+    "six-policy current-request byte-weight fixture",
+    "all 60 cache replays",
+    "all generated macros/tables/statistics match",
+    "all six PDF/PNG figure hashes match"
+  ],
+  "environment": {
+    "python": "3.12.7",
+    "libcachesim": "0.3.3.post4",
+    "platform": "Darwin",
+    "machine": "arm64"
+  },
+  "status": "passed"
+}

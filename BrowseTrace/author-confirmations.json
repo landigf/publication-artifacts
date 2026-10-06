@@ -1,0 +1,68 @@
+{
+  "schema_version": 2,
+  "recorded_date": "2026-10-06",
+  "scope": "Author confirmations and release authority for the current manuscript and reviewed publication artifact; historical manuscripts and repository history remain preserved",
+  "author": {
+    "name": "Gennaro Francesco Landi",
+    "affiliation": "ETH Zurich",
+    "email": "landig@ethz.ch",
+    "orcid": "https://orcid.org/0009-0002-9641-8382",
+    "identity_basis": "Name, affiliation, contact and ORCID supplied by the author. ORCID checksum and matching public record independently checked; public affiliation entries are self-asserted, not institutional verification. The email is author-provided and is not public in the ORCID record."
+  },
+  "confirmed": {
+    "sole_authorship": {
+      "value": true,
+      "basis": "User explicitly stated: I am the solo author",
+      "applies_to": "Current manuscript; distribution rights are covered separately by the author rights confirmation below"
+    },
+    "publication_and_redistribution_rights": {
+      "value": true,
+      "basis": "Author affirmatively answered the release-rights question, including authority to publish and redistribute the reviewed materials and applicable contributor, institutional, contractual, confidentiality and code/data restrictions",
+      "verification_boundary": "Author-confirmed authority; no independent legal opinion, contract interpretation or waiver from another rights holder is claimed"
+    },
+    "human_observations_and_consent": {
+      "value": true,
+      "participant": "the author",
+      "retained_task_observations": 10,
+      "basis": "Author confirmed that the retained human observations are their own and that publication authority and consent are established",
+      "verification_boundary": "Author confirmation; no independent collection-authenticity verification or ethical-review determination is claimed"
+    },
+    "final_manuscript_approved": {
+      "value": true,
+      "basis": "Author approved the prepared PDF"
+    },
+    "ai_disclosure_and_responsibility": {
+      "value": true,
+      "basis": "Author approved the AI disclosure and accepted responsibility for the manuscript"
+    },
+    "paper_distribution_license": {
+      "value": "arXiv non-exclusive distribution license",
+      "basis": "Author accepted the proposed arXiv license; account submission has not occurred"
+    },
+    "artifact_licenses": {
+      "code": "Apache-2.0",
+      "data": "CC-BY-4.0",
+      "basis": "Author authorized useful public code/data release under the proposed licenses",
+      "operative_files": [
+        "LICENSE",
+        "LICENSE-DATA"
+      ]
+    },
+    "public_release_instruction": {
+      "value": true,
+      "basis": "Author explicitly instructed go for public papers and the reviewed artifact",
+      "scope": "Current public preprint and verified publication artifact; no repository-history rewrite or force-push authorization"
+    }
+  },
+  "release_authorized": true,
+  "canonical_artifact_destination": "https://github.com/landigf/publication-artifacts/tree/main/BrowseTrace",
+  "source_repository_provenance": "https://github.com/landigf/BrowseTrace",
+  "release_execution_status": "authorized; not released or uploaded by this local preparation",
+  "arxiv_account_access_verified": false,
+  "arxiv_category_endorsement_verified": false,
+  "repository_history_rewrite_authorized": false,
+  "force_push_authorized": false,
+  "remaining_inputs": [
+    "arXiv submitting account access and cs.NI endorsement readiness"
+  ]
+}

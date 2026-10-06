@@ -1,0 +1,29 @@
+{
+  "cache_accounting": "The pinned policies admit using the incoming size and do not update resident-size accounting on a cache hit. Byte-hit ratios weight the current request's supplied size. Capacity bounds this admission-time accounting, not verified physical HTTP representation bytes.",
+  "definition": "A varying-size key has at least two different positive object_size_bytes values in its released sequence. Zero-size rows are excluded consistently with native replay.",
+  "schema_version": 1,
+  "workloads": [
+    {
+      "current_request_bytes_on_varying_keys": 2022394378,
+      "path": "data/traces/full_400_sessions.csv",
+      "positive_size_keys": 17144,
+      "positive_size_requests": 82455,
+      "requests_on_varying_keys": 62692,
+      "sha256": "6664aef51741a7ec0ed9a7247cbd792ee40c335379b721ae2fcf272a13d604ca",
+      "varying_positive_size_key_percent": 18.29211385907606,
+      "varying_positive_size_keys": 3136,
+      "workload": "scripted"
+    },
+    {
+      "current_request_bytes_on_varying_keys": 4297049508,
+      "path": "data/traces/llm_full_901.csv",
+      "positive_size_keys": 17931,
+      "positive_size_requests": 236073,
+      "requests_on_varying_keys": 212857,
+      "sha256": "68b5221500d53c4ac9fc18f6673f43b11746a0597b7cee06b1190bd3b60f7042",
+      "varying_positive_size_key_percent": 31.43717584072277,
+      "varying_positive_size_keys": 5637,
+      "workload": "llm"
+    }
+  ]
+}

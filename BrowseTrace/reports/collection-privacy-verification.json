@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "environment": {
+    "python": "3.12.2",
+    "pydantic": "2.13.5"
+  },
+  "credential_field_names": [
+    "api-key",
+    "apikey",
+    "authorization",
+    "cookie",
+    "proxy-authorization",
+    "set-cookie",
+    "x-access-token",
+    "x-amz-security-token",
+    "x-api-key",
+    "x-auth-token",
+    "x-authorization",
+    "x-goog-api-key"
+  ],
+  "checks": [
+    "HTTPTracer.record request headers",
+    "HTTPTracer request/response callback export",
+    "BrowserUseNetworkTracer request and response constructor",
+    "case insensitive header removal",
+    "Content-Type retained"
+  ],
+  "no_browser_or_model_execution": true
+}

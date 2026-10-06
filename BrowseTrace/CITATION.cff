@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "BrowseTrace: Reproducible HTTP Traces and Cache Replay for Browser-Mediated AI Workloads"
+message: "Please cite this dataset and software artifact. Public release is author-authorized; no DOI or arXiv identifier is assigned and no conference acceptance is claimed."
+type: dataset
+authors:
+  - family-names: Landi
+    given-names: Gennaro Francesco
+    affiliation: ETH Zurich
+    email: landig@ethz.ch
+    orcid: "https://orcid.org/0009-0002-9641-8382"
+version: "publication-2026-10-06"
+license: CC-BY-4.0
+license-url: "https://creativecommons.org/licenses/by/4.0/"
+repository-code: "https://github.com/landigf/publication-artifacts/tree/main/BrowseTrace"
+keywords:
+  - browser agents
+  - HTTP workload measurement
+  - cache replay
+  - reproducibility
+abstract: >
+  Sanitized historical cohort projections and opaque replay inputs for 400
+  scripted attempts and 911 LLM attempts, plus a separate 300-attempt local
+  comparison and ten task observations performed by the author. Includes
+  pinned offline six-policy five-capacity request-hit and byte-hit replay.

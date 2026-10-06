@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "prepared_date": "2026-10-06",
+  "status": "author-approved local preparation; public release authorized; no external submission performed",
+  "title": "Absorbers: Decision Equivalence and Guarded Reuse of Nondeterministic Agent Steps",
+  "authors": [
+    {
+      "given_names": "Gennaro Francesco",
+      "family_name": "Landi",
+      "affiliation": "ETH Zurich",
+      "email": "landig@ethz.ch",
+      "orcid": "0009-0002-9641-8382"
+    }
+  ],
+  "arxiv": {
+    "primary_category": "cs.DC",
+    "cross_list_categories": [],
+    "paper_license": "arXiv non-exclusive distribution license",
+    "paper_license_authorized": true,
+    "submitting_account_access_verified": false,
+    "category_endorsement_verified": false,
+    "identifier": null,
+    "journal_reference": null,
+    "doi": null,
+    "comments": "7 pages. Original empirical preprint; not peer-reviewed. Public release authorized; no arXiv identifier or DOI assigned."
+  },
+  "artifact": {
+    "repository": "https://github.com/landigf/publication-artifacts",
+    "code_url": "https://github.com/landigf/publication-artifacts/tree/main/Absorbers",
+    "source_repository_provenance": "https://github.com/landigf/AuditableAgents",
+    "code_license": "Apache-2.0",
+    "data_license": "CC-BY-4.0",
+    "license_scope": "Artifact software is covered by LICENSE; synthetic requests, recorded model outputs, experiment data and derived results are covered by LICENSE-DATA. Manuscript distribution is separate.",
+    "doi": null,
+    "deposit_state": "author-authorized metadata prepared; no DOI deposit performed",
+    "public_release_state": "authorized; publication must be verified by the publishing workflow"
+  },
+  "author_confirmations": "author-confirmations.json",
+  "authority_basis": "Author confirmation; no independent legal clearance claimed",
+  "author_confirmations_pending": [
+    "arXiv submitting account access and cs.DC endorsement readiness"
+  ],
+  "abstract": "Caching an agent step can change a downstream decision even when repeated calls to that step appear identical. We study this gap using frozen executions of synthetic procurement workflows with nondeterministic language-model steps and a deterministic approve/reject/escalate consumer. A recorded Gemma3 chain produces identical validated outputs on 260 configured temperature-zero same-prompt pairs for each feeding step, yet declared dependency reuse introduces two unsafe approvals on one request: a stable but wrong justification changes on a perturbed prompt that the declaration treats as irrelevant. We then evaluate a policy-specific decision-equivalence certificate using structured request differences, cached candidate outputs, fresh noncandidate outputs, and finite valid-output witnesses. Across three chain configurations it certifies 82.1\u201385.3% of recorded perturbations and saves 50.5\u201352.1% of nominal feeding-step call slots, with zero decision changes on certified, scoreable cases. One DeepSeek and 30 Phi4-mini rows are unscoreable; they remain in fraction denominators and receive no equivalence guarantee. The results distinguish observed repeatability, correctness, and consumer equivalence, and provide a reproducible offline test rather than a deployed reuse runtime.",
+  "keywords": [
+    "LLM workflows",
+    "decision equivalence",
+    "nondeterminism",
+    "reuse certificates",
+    "offline reproducibility"
+  ],
+  "version": "publication-2026-10-06",
+  "anonymous_venue_variant": {
+    "status": "separate local anonymous submission draft; unsubmitted",
+    "public_artifact_includes_variant": false,
+    "submission_authorization": "not established"
+  }
+}

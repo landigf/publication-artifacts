@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "prepared_date": "2026-10-06",
+  "tested_environment": {
+    "python": "3.12.7",
+    "implementation": "CPython",
+    "system": "Darwin",
+    "system_release": "25.5.0",
+    "machine": "arm64"
+  },
+  "dependency_lock": {
+    "path": "publication/requirements-lock.txt",
+    "sha256": "0558b77bd8f2897bd157c54b3393d04048522fe716c19a66251bb77597d05ab9"
+  },
+  "installed_packages": [
+    {
+      "name": "contourpy",
+      "version": "1.3.3"
+    },
+    {
+      "name": "cycler",
+      "version": "0.12.1"
+    },
+    {
+      "name": "fonttools",
+      "version": "4.66.1"
+    },
+    {
+      "name": "kiwisolver",
+      "version": "1.5.1"
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.9.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.2.6"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3"
+    },
+    {
+      "name": "pillow",
+      "version": "12.3.0"
+    },
+    {
+      "name": "pip",
+      "version": "24.2"
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.3"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0"
+    }
+  ],
+  "paper_build_tools": {
+    "pdftex": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2024)",
+    "bibtex": "BibTeX 0.99d (TeX Live 2024)",
+    "latexmk": "Latexmk, John Collins, 7 Apr. 2024. Version 4.85"
+  },
+  "reproduction_environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "MPLCONFIGDIR": "isolated temporary directory",
+    "XDG_CACHE_HOME": "isolated temporary directory"
+  },
+  "scope": "Complete pinned dependency closure and tested platform. Frozen data replay uses no model/provider calls. Exact figure hashes were verified on this environment; byte identity on other platforms is not asserted."
+}

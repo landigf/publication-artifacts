@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "archive": "Absorbers-artifact.zip",
+  "archive_sha256": "8475092c648efbaf3fd5b5fb4caea086df8bbd1e2da8906b356317ffb8c3e04e",
+  "commands": [
+    {
+      "command": [
+        "bash",
+        "REPRODUCE.sh",
+        "--offline"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "checks": [
+    "all exported payload checksums",
+    "disposable clone starts clean",
+    "no tracked payload changes after reproduction"
+  ],
+  "status": "passed"
+}

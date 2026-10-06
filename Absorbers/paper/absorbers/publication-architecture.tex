@@ -1,0 +1,20 @@
+\begin{tikzpicture}[x=1.95cm,y=1cm,>=Stealth,
+  box/.style={draw,rounded corners=1pt,align=center,font=\fontsize{8}{9}\selectfont,minimum height=.6cm,inner sep=3pt},
+  arr/.style={->,line width=.5pt}]
+\node[box,text width=1.9cm] (r) at (0,1.8) {Synthetic\\request};
+\node[box,text width=2.0cm] (p) at (1.65,2.4) {Parse LLM\\6 fields};
+\node[box,text width=2.0cm] (j) at (1.65,1.2) {Justify LLM\\2 fields};
+\node[box,text width=2.0cm] (v) at (3.4,1.8) {Validate\\and merge};
+\node[box,text width=1.9cm] (d) at (5.1,1.8) {Policy\\decision};
+\node[box,text width=1.8cm] (e) at (6.75,1.8) {Explain LLM\\sink};
+\node[font=\fontsize{8}{9}\selectfont,align=center] (s) at (3.4,3.15) {Authoritative supplier fields};
+\draw[arr] (r) -- (p); \draw[arr] (r) -- (j);
+\draw[arr] (p) -- (v); \draw[arr] (j) -- (v);
+\draw[arr] (s) -- (v); \draw[arr] (v) -- (d); \draw[arr] (d) -- (e);
+\node[box,text width=4.0cm] (obs) at (1.05,-.25) {Structured request diff;\\canonical candidates;\\fresh noncandidate outputs};
+\node[box,text width=3.3cm] (w) at (3.6,-.25) {Enumerate valid\\candidate witnesses};
+\node[box,text width=3.7cm] (g) at (6.05,-.25) {Consumer decisions constant?\\Certify reuse;\\otherwise recompute};
+\draw[arr] (obs) -- (w); \draw[arr] (w) -- (g);
+\draw[densely dashed] (-.65,.8) -- (7.3,.8);
+\node[font=\fontsize{8}{9}\selectfont,anchor=west] at (-.6,.55) {Offline certificate analysis of recorded executions};
+\end{tikzpicture}

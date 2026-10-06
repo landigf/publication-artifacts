@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "manuscript": "paper/BrowseTrace-preprint.tex",
+  "bibliography": "paper/BrowseTrace-preprint.bib",
+  "checked_on": "2026-10-06",
+  "method": "Primary-source verification of each used reference; bibliographic facts and associated manuscript claims checked. Historical bibliography was not copied. Literature positioning makes no exhaustive first-dataset or absence-of-artifacts claim.",
+  "used_reference_count": 10,
+  "direct_quotations_in_manuscript": 0,
+  "references": [
+    {
+      "key": "webarena",
+      "primary_url": "https://arxiv.org/abs/2307.13854",
+      "verified_fields": [
+        "title",
+        "all 12 authors",
+        "2023 first submission",
+        "arXiv identifier",
+        "DOI"
+      ],
+      "claim": "WebArena provides a realistic reproducible environment and functional task-completion evaluation.",
+      "basis": "Original paper author-hosted arXiv abstract, not an inferred absence of network traces.",
+      "status": "verified",
+      "checked_on": "2026-10-06",
+      "direct_quotations": 0
+    },
+    {
+      "key": "webvoyager",
+      "primary_url": "https://arxiv.org/abs/2401.13919",
+      "verified_fields": [
+        "title",
+        "all 8 authors",
+        "2024 first submission",
+        "arXiv identifier",
+        "DOI"
+      ],
+      "claim": "WebVoyager evaluates end-to-end browser agents on real website tasks.",
+      "basis": "Original paper author-hosted arXiv abstract; no success-rate comparison imported into BrowseTrace.",
+      "status": "verified",
+      "checked_on": "2026-10-06",
+      "direct_quotations": 0
+    },
+    {
+      "key": "browseruse",
+      "primary_url": "https://github.com/browser-use/browser-use",
+      "verified_fields": [
+        "project title",
+        "project-provided author citation",
+        "citation year2024"
+      ],
+      "claim": "Browser Use is the execution substrate.",
+      "basis": "Project citation README; local collection runner imports Agent and Browser. Current README is not historical runtime evidence.",
+      "status": "verified",
+      "checked_on": "2026-10-06",
+      "direct_quotations": 0
+    },
+    {
+      "key": "cdp",
+      "primary_url": "https://chromedevtools.github.io/devtools-protocol/tot/Network/",
+      "additional_primary_url": "https://raw.githubusercontent.com/ChromeDevTools/devtools-protocol/master/json/browser_protocol.json",
+      "verified_fields": [
+        "organization",
+        "Network event names",
+        "loadingFinished encodedDataLength definition"
+      ],
+      "claim": "The collector subscribes to four Network events, and completion sizes derive from CDP encoded-data-length reporting.",
+      "basis": "Protocol JSON retrieved and event schema parsed; local tracer subscriptions and size assignments inspected.",
+      "status": "verified",
+      "checked_on": "2026-10-06",
+      "direct_quotations": 0
+    },
+    {
+      "key": "arc",
+      "primary_url": "https://www.usenix.org/conference/fast-03/arc-self-tuning-low-overhead-replacement-cache",
+      "verified_fields": [
+        "title",
+        "both authors",
+        "FAST03 venue",
+        "2003 year",
+        "publisher"
+      ],
+      "claim": "ARC adaptively balances recency and frequency.",
+      "basis": "USENIX paper abstract and supplied BibTeX; original page-size scope not asserted as the variable-object library implementation.",
+      "status": "verified",
+      "checked_on": "2026-10-06",
+      "direct_quotations": 0
+    },
+    {
+      "key": "s3fifo",
+      "primary_url": "https://www.cs.cmu.edu/~rvinayak/papers/s3-fifo-sosp-2023-fifo-queues-are-all-you-need-for-cache-eviction.pdf",
+      "additional_primary_url": "https://github.com/Thesys-lab/sosp23-s3fifo",
+      "verified_fields": [
+        "title",
+        "all 5 authors",
+        "SOSP2023 venue",
+        "DOI",
+        "page span130-149"
+      ],
+      "claim": "S3-FIFO uses static FIFO queues and quick demotion.",
+      "basis": "Author-hosted original paper abstract and ACM reference on its first page, corroborated by author artifact; ACM DOI endpoint itself returned403.",
+      "status": "verified",
+      "checked_on": "2026-10-06",
+      "direct_quotations": 0
+    },
+    {
+      "key": "tinylfu",
+      "primary_url": "https://arxiv.org/abs/1512.00727",
+      "verified_fields": [
+        "title",
+        "all3 authors",
+        "2015 first submission",
+        "arXiv identifier",
+        "DOI"
+      ],
+      "claim": "TinyLFU is frequency-based admission and W-TinyLFU combines it with a window.",
+      "basis": "Original paper author-hosted arXiv abstract, not a general claim of superiority.",
+      "status": "verified",
+      "checked_on": "2026-10-06",
+      "direct_quotations": 0
+    },
+    {
+      "key": "gdsf",
+      "primary_url": "https://shiftleft.com/mirrors/www.hpl.hp.com/techreports/98/HPL-98-69R1.pdf",
+      "additional_primary_url": "https://shiftleft.com/mirrors/www.hpl.hp.com/techreports/98/HPL-98-69R1.html",
+      "verified_fields": [
+        "title",
+        "Ludmila Cherkasova",
+        "HPL-98-69 revision1",
+        "November1998",
+        "HP Laboratories"
+      ],
+      "claim": "GDSF incorporates size, access frequency, and recency.",
+      "basis": "Original HP Labs technical report preserved by a mirror; cover and abstract verified. Not the unsupported USITS1999 citation from historical bibliography.",
+      "status": "verified",
+      "checked_on": "2026-10-06",
+      "direct_quotations": 0
+    },
+    {
+      "key": "libcachesim",
+      "primary_url": "https://github.com/1a1a11a/libCacheSim",
+      "verified_fields": [
+        "software identity",
+        "original project URL",
+        "supported policy list"
+      ],
+      "claim": "Reference replay uses library implementations, with Python distribution0.3.3.post4 pinned separately by the artifact.",
+      "basis": "Original project documentation; installed distribution signature and artifact version report establish actual version, not current GitHub HEAD.2026 indicates access year.",
+      "status": "verified",
+      "checked_on": "2026-10-06",
+      "direct_quotations": 0
+    },
+    {
+      "key": "rfc9111",
+      "primary_url": "https://www.rfc-editor.org/rfc/rfc9111.html",
+      "verified_fields": [
+        "title",
+        "three named editors",
+        "RFC9111",
+        "June2022",
+        "DOI"
+      ],
+      "claim": "HTTP caching requires freshness, selected-representation, validation, and authorization semantics omitted by replay.",
+      "basis": "Official IETF standard, sections3-5. No normative compliance claim is made for the artifact.",
+      "status": "verified",
+      "checked_on": "2026-10-06",
+      "direct_quotations": 0
+    }
+  ]
+}

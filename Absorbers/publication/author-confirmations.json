@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "recorded_date": "2026-10-06",
+  "scope": "Author confirmations and release authority for the current manuscripts and reviewed publication artifact; historical manuscripts and repository history remain preserved",
+  "author": {
+    "name": "Gennaro Francesco Landi",
+    "affiliation": "ETH Zurich",
+    "email": "landig@ethz.ch",
+    "orcid": "https://orcid.org/0009-0002-9641-8382",
+    "identity_basis": "Name, contact and ORCID supplied by the author. ORCID checksum and matching public record independently checked; public affiliation entries are self-asserted, not institutional verification."
+  },
+  "confirmed": {
+    "sole_authorship": {
+      "value": true,
+      "basis": "User explicitly stated: I am the solo author",
+      "applies_to": "Current manuscripts; inherited-material rights are covered separately by the author's rights confirmation below"
+    },
+    "publication_and_redistribution_rights": {
+      "value": true,
+      "basis": "Author affirmatively answered the release-rights question, including authority to publish and redistribute the reviewed materials and applicable contributor, institutional, contractual, confidentiality and model-output restrictions",
+      "verification_boundary": "Author-confirmed authority; no independent legal opinion, contract interpretation or waiver from another rights holder is claimed"
+    },
+    "final_manuscripts_approved": {
+      "value": true,
+      "basis": "Author approved the prepared PDFs"
+    },
+    "ai_disclosures_and_responsibility": {
+      "value": true,
+      "basis": "Author approved the AI disclosures and accepted responsibility for the manuscripts"
+    },
+    "paper_distribution_license": {
+      "value": "arXiv non-exclusive distribution license",
+      "basis": "Author accepted the proposed arXiv license; account submission has not occurred"
+    },
+    "artifact_licenses": {
+      "code": "Apache-2.0",
+      "data": "CC-BY-4.0",
+      "basis": "Author authorized useful public code/data release under the proposed licenses",
+      "operative_files": ["LICENSE", "LICENSE-DATA"]
+    },
+    "public_release_instruction": {
+      "value": true,
+      "basis": "Author explicitly instructed go for public papers and the reviewed artifact",
+      "scope": "Current public preprint and verified publication artifact; no repository-history rewrite or force-push authorization"
+    }
+  },
+  "release_authorized": true,
+  "canonical_artifact_destination": "https://github.com/landigf/publication-artifacts/tree/main/Absorbers",
+  "release_execution_status": "authorized; actual public publication and external identifiers must be recorded by the publishing workflow",
+  "arxiv_account_access_verified": false,
+  "arxiv_category_endorsement_verified": false,
+  "hotos_submission_authorization": "not established; anonymous draft remains unsubmitted",
+  "repository_history_rewrite_authorized": false,
+  "force_push_authorized": false,
+  "remaining_inputs": [
+    "arXiv submitting account access and cs.DC endorsement readiness"
+  ]
+}

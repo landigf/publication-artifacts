@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "manuscripts": [
+    "paper/absorbers/preprint.tex"
+  ],
+  "shared_body": "paper/absorbers/publication-body.tex",
+  "bibliography": "paper/absorbers/publication-refs.bib",
+  "checked_on": "2026-10-06",
+  "method": "Fresh primary-source verification of every used reference, bibliographic field and associated literature claim. Historical bibliography not copied. Direct sources read through web tools and independently retrieved with validated TLS curl; immutable retrieval hashes are receipts, not promises that changing documentation remains byte-identical. No absence-of-prior-work or first-system claim.",
+  "used_reference_count": 7,
+  "direct_quotations_in_manuscript": 0,
+  "references": [
+    {
+      "key": "langgraph",
+      "primary_url": "https://docs.langchain.com/oss/python/langgraph/graph-api#node-caching",
+      "verified_fields": [
+        "corporate author",
+        "page title",
+        "node-caching anchor",
+        "access date"
+      ],
+      "claim": "LangGraph node caching derives its default key from node input; cache key and TTL are configurable.",
+      "basis": "Official Graph API documentation, Node caching section; no universal functionality assumption attributed to LangGraph.",
+      "status": "verified",
+      "checked_on": "2026-10-06",
+      "direct_quotations": 0
+    },
+    {
+      "key": "temporal",
+      "primary_url": "https://docs.temporal.io/workflow-definition#deterministic-constraints",
+      "verified_fields": [
+        "corporate author",
+        "page title",
+        "deterministic-constraints anchor",
+        "access date"
+      ],
+      "claim": "Nondeterministic operations including LLM invocations belong in Activities outside the workflow replay path.",
+      "basis": "Official Workflow Definition, Deterministic constraints; durable replay is distinguished from changed-request reuse.",
+      "status": "verified",
+      "checked_on": "2026-10-06",
+      "direct_quotations": 0
+    },
+    {
+      "key": "vistrails",
+      "primary_url": "https://aosabook.org/en/v1/vistrails.html",
+      "verified_fields": [
+        "all six chapter authors",
+        "chapter title",
+        "book volume",
+        "chapter number",
+        "URL"
+      ],
+      "claim": "VisTrails assumes cacheable modules return the same outputs for the same inputs and permits nondeterministic modules to be marked non-cacheable.",
+      "basis": "Author-written chapter, Section 23.3.2. Original publication date is not stated on the consulted page; bibliography uses n.d. rather than inventing a date.",
+      "status": "verified",
+      "checked_on": "2026-10-06",
+      "direct_quotations": 0
+    },
+    {
+      "key": "gptcache",
+      "primary_url": "https://aclanthology.org/2023.nlposs-1.24/",
+      "verified_fields": [
+        "author Fu Bang",
+        "title",
+        "2023",
+        "booktitle",
+        "publisher",
+        "Singapore",
+        "pages212\u2013218",
+        "DOI",
+        "URL"
+      ],
+      "claim": "GPTCache performs semantic response caching and evaluates incorrect hits, discussing false-positive tradeoffs.",
+      "basis": "Original ACL Anthology paper, Sections3.5,4,5 and tables1\u20132; no claim that semantic caches ignore false positives.",
+      "status": "verified",
+      "checked_on": "2026-10-06",
+      "direct_quotations": 0
+    },
+    {
+      "key": "mnimi",
+      "primary_url": "https://arxiv.org/abs/2511.22118",
+      "verified_fields": [
+        "all four authors",
+        "title",
+        "2025firstsubmission",
+        "arXividentifier",
+        "DOI",
+        "v1"
+      ],
+      "claim": "Mnimi addresses statistical independence constraints for cached samples in probabilistic LLM workflows.",
+      "basis": "Original author-posted arXiv v1 abstract; not presented as peer-reviewed or compared experimentally.",
+      "status": "verified",
+      "checked_on": "2026-10-06",
+      "direct_quotations": 0
+    },
+    {
+      "key": "stepcache",
+      "primary_url": "https://arxiv.org/abs/2603.28795",
+      "verified_fields": [
+        "author Azam Nouri",
+        "title",
+        "2026firstsubmission",
+        "arXividentifier",
+        "DOI",
+        "v1"
+      ],
+      "claim": "StepCache uses task-aware verification and selective regeneration of reusable output steps.",
+      "basis": "Original author-posted arXiv v1 abstract; performance numbers are not imported and no peer-review status is asserted.",
+      "status": "verified",
+      "checked_on": "2026-10-06",
+      "direct_quotations": 0
+    },
+    {
+      "key": "deepseek",
+      "primary_url": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "verified_fields": [
+        "corporate author",
+        "page title",
+        "URL",
+        "access date"
+      ],
+      "claim": "Current provider documentation says temperature has no effect in thinking mode.",
+      "basis": "Official Thinking Mode, Input and Output Parameters. The historical sweep settings are separately established by frozen call specifications; current docs do not fix a historical model snapshot.",
+      "status": "verified",
+      "checked_on": "2026-10-06",
+      "direct_quotations": 0
+    }
+  ],
+  "retrieval_receipts": [
+    {
+      "key": "langgraph",
+      "url": "https://docs.langchain.com/oss/python/langgraph/graph-api#node-caching",
+      "retrieval": "curl with certificate validation",
+      "ok": true,
+      "bytes": 1795747,
+      "sha256": "59f013ed47eea828672af9f719348c610e22b4689f8d53531828a620be154b19"
+    },
+    {
+      "key": "temporal",
+      "url": "https://docs.temporal.io/workflow-definition#deterministic-constraints",
+      "retrieval": "curl with certificate validation",
+      "ok": true,
+      "bytes": 101598,
+      "sha256": "17aeaf01b66efa0b4151ad381c3ed99f240676d1eee6d0ef975dfbbb88ca7dd0"
+    },
+    {
+      "key": "vistrails",
+      "url": "https://aosabook.org/en/v1/vistrails.html",
+      "retrieval": "curl with certificate validation",
+      "ok": true,
+      "bytes": 63749,
+      "sha256": "9854495007a40c36a36deea66238f368bf61f43b12b0e48e1ec2837b43addb0f"
+    },
+    {
+      "key": "gptcache",
+      "url": "https://aclanthology.org/2023.nlposs-1.24/",
+      "retrieval": "curl with certificate validation",
+      "ok": true,
+      "bytes": 42398,
+      "sha256": "fc6c127af7f61cf4c809305895ec593f4f8d08742a8de992468e5d25742bde68"
+    },
+    {
+      "key": "gptcache-pdf",
+      "url": "https://aclanthology.org/2023.nlposs-1.24.pdf",
+      "retrieval": "curl with certificate validation",
+      "ok": true,
+      "bytes": 185290,
+      "sha256": "9872047abc362a7cae037107e4c861b12cd37c57e1b36c13b9ed09268243ea49"
+    },
+    {
+      "key": "mnimi",
+      "url": "https://arxiv.org/abs/2511.22118",
+      "retrieval": "curl with certificate validation",
+      "ok": true,
+      "bytes": 41555,
+      "sha256": "82aa4bf0830707b9c9b6e1df068a13ce7c752d36910af29b142713e2119cfb57"
+    },
+    {
+      "key": "stepcache",
+      "url": "https://arxiv.org/abs/2603.28795",
+      "retrieval": "curl with certificate validation",
+      "ok": true,
+      "bytes": 42941,
+      "sha256": "12c5daacb9da4abd5f778435918bc0343f8c1f27a390299aed07e0dd12a6bbe2"
+    },
+    {
+      "key": "deepseek",
+      "url": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "retrieval": "curl with certificate validation",
+      "ok": true,
+      "bytes": 113722,
+      "sha256": "35350389e59872d3733f7b7f99f5485c6cbc95f1bc2a71a47ba3ecf30bd7a060"
+    }
+  ],
+  "bibliography_sha256": "4d83a969dbe36cacae3f05ff41fb962f83fe7406a71e966bed5ad0c3fe11e96d",
+  "scope_note": "Only references used by the new publication versions are audited. Historical drafts and unused historical bibliography entries remain preserved, with no validation implied."
+}

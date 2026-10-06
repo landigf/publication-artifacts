@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "title": "BrowseTrace: Reproducible HTTP Traces and Cache Replay for Browser-Mediated AI Workloads",
+    "upload_type": "dataset",
+    "creators": [
+      {
+        "name": "Landi, Gennaro Francesco",
+        "affiliation": "ETH Zurich",
+        "orcid": "0009-0002-9641-8382"
+      }
+    ],
+    "description": "Author-approved research dataset/software artifact containing sanitized browser-workload replay traces, session census, the author's ten human task observations, supporting audits, reproducible measurements, and an original empirical manuscript. Not an accepted conference publication. Artifact software is Apache-2.0; released data and derived results are CC BY 4.0; manuscript distribution is separate. Publication rights and release authority are author-confirmed. This metadata has not been deposited.",
+    "license": "cc-by-4.0",
+    "publication_date": null,
+    "keywords": [
+      "browser agents",
+      "HTTP traces",
+      "cache replay",
+      "reproducibility"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/landigf/publication-artifacts/tree/main/BrowseTrace",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://github.com/landigf/BrowseTrace",
+        "relation": "isDerivedFrom",
+        "scheme": "url"
+      }
+    ]
+  },
+  "local_note": "Author-authorized deposit draft. Use the actual release/deposit date and version when depositing. No deposit or DOI exists; assigned identifiers must be recorded only after the external workflow completes."
+}

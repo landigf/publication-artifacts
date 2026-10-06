@@ -1,0 +1,11 @@
+AI tools assisted substantially with literature checking, code inspection and
+revision, preparation of sanitized data projections, statistical analysis,
+figure generation, manuscript rewriting, and automated technical and skeptical
+reviews. Numerical results were recomputed from retained data and compared
+with the publication artifact. No new live-model or human data were collected
+for this preparation. AI tools are not authors.
+
+On 6 October 2026, Gennaro Francesco Landi approved the prepared manuscript
+and this disclosure, confirmed that it accurately describes the assistance,
+and accepted responsibility for the work. Public release is authorized;
+this approval does not claim that an external submission has occurred.

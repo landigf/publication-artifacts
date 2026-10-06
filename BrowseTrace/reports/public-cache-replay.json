@@ -1,0 +1,460 @@
+{
+  "schema_version": 2,
+  "environment": {
+    "python": "3.12.7",
+    "libcachesim": "0.3.3.post4",
+    "platform": "Darwin",
+    "machine": "arm64"
+  },
+  "configuration": {
+    "consider_obj_metadata": false,
+    "default_ttl": 25920000,
+    "hashpower": 24,
+    "origin_http_headers_available": false
+  },
+  "method": "Cold cache for each policy/size; published CSV row order; default policy parameters except explicit consider_obj_metadata=False; 1 MiB = 1048576 bytes. libCacheSim ignores zero-size rows: request-hit denominator counts positive-size rows, byte-hit denominator sums their object_size_bytes. No HTTP eligibility/freshness semantics.",
+  "workloads": [
+    {
+      "workload": "scripted",
+      "path": "data/traces/full_400_sessions.csv",
+      "sha256": "6664aef51741a7ec0ed9a7247cbd792ee40c335379b721ae2fcf272a13d604ca",
+      "file_rows": 82455,
+      "effective_request_denominator": 82455,
+      "ignored_zero_size_rows": 0,
+      "effective_byte_denominator": 2236749954,
+      "distinct_legacy_session_labels": 400
+    },
+    {
+      "workload": "llm",
+      "path": "data/traces/llm_full_901.csv",
+      "sha256": "68b5221500d53c4ac9fc18f6673f43b11746a0597b7cee06b1190bd3b60f7042",
+      "file_rows": 357782,
+      "effective_request_denominator": 236073,
+      "ignored_zero_size_rows": 121709,
+      "effective_byte_denominator": 4587491218,
+      "distinct_legacy_session_labels": 100
+    }
+  ],
+  "results": [
+    {
+      "workload": "scripted",
+      "cache_mib": 1,
+      "policy": "LRU",
+      "request_hit_ratio": 0.13310290461463825,
+      "byte_hit_ratio": 0.02722462691509231
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 1,
+      "policy": "LFU",
+      "request_hit_ratio": 0.14709841731853734,
+      "byte_hit_ratio": 0.023664966620582706
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 1,
+      "policy": "ARC",
+      "request_hit_ratio": 0.15722515311381968,
+      "byte_hit_ratio": 0.04354660824998058
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 1,
+      "policy": "S3-FIFO",
+      "request_hit_ratio": 0.2756412588684738,
+      "byte_hit_ratio": 0.06447084876077303
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 1,
+      "policy": "W-TinyLFU",
+      "request_hit_ratio": 0.36447759383906375,
+      "byte_hit_ratio": 0.030711254459692694
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 1,
+      "policy": "GDSF",
+      "request_hit_ratio": 0.4313261779152264,
+      "byte_hit_ratio": 0.04352729451313542
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 5,
+      "policy": "LRU",
+      "request_hit_ratio": 0.3742162391607544,
+      "byte_hit_ratio": 0.24857158441233618
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 5,
+      "policy": "LFU",
+      "request_hit_ratio": 0.2729246255533322,
+      "byte_hit_ratio": 0.1208589308414042
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 5,
+      "policy": "ARC",
+      "request_hit_ratio": 0.36224607361591166,
+      "byte_hit_ratio": 0.2383788684320679
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 5,
+      "policy": "S3-FIFO",
+      "request_hit_ratio": 0.4244011885270753,
+      "byte_hit_ratio": 0.29760110682447793
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 5,
+      "policy": "W-TinyLFU",
+      "request_hit_ratio": 0.4563822691164878,
+      "byte_hit_ratio": 0.1177176753839334
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 5,
+      "policy": "GDSF",
+      "request_hit_ratio": 0.5953429143169001,
+      "byte_hit_ratio": 0.15799055337769774
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 10,
+      "policy": "LRU",
+      "request_hit_ratio": 0.5074040385664909,
+      "byte_hit_ratio": 0.43308890797902744
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 10,
+      "policy": "LFU",
+      "request_hit_ratio": 0.3455460554241707,
+      "byte_hit_ratio": 0.19074757070499082
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 10,
+      "policy": "ARC",
+      "request_hit_ratio": 0.502649930264993,
+      "byte_hit_ratio": 0.4318421727348787
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 10,
+      "policy": "S3-FIFO",
+      "request_hit_ratio": 0.5291371050876236,
+      "byte_hit_ratio": 0.46406007571108243
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 10,
+      "policy": "W-TinyLFU",
+      "request_hit_ratio": 0.5185252562003517,
+      "byte_hit_ratio": 0.19430864868143416
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 10,
+      "policy": "GDSF",
+      "request_hit_ratio": 0.6644715299254139,
+      "byte_hit_ratio": 0.26162429642772667
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 25,
+      "policy": "LRU",
+      "request_hit_ratio": 0.6843611666969862,
+      "byte_hit_ratio": 0.693383074056386
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 25,
+      "policy": "LFU",
+      "request_hit_ratio": 0.5350191013279971,
+      "byte_hit_ratio": 0.43951058420363776
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 25,
+      "policy": "ARC",
+      "request_hit_ratio": 0.6618761748832697,
+      "byte_hit_ratio": 0.6743921529102667
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 25,
+      "policy": "S3-FIFO",
+      "request_hit_ratio": 0.6309138317870353,
+      "byte_hit_ratio": 0.6159075736366373
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 25,
+      "policy": "W-TinyLFU",
+      "request_hit_ratio": 0.6205202837911589,
+      "byte_hit_ratio": 0.3769537504593148
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 25,
+      "policy": "GDSF",
+      "request_hit_ratio": 0.7369959371778546,
+      "byte_hit_ratio": 0.46933601725246754
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 50,
+      "policy": "LRU",
+      "request_hit_ratio": 0.7194227154205324,
+      "byte_hit_ratio": 0.7726215171747356
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 50,
+      "policy": "LFU",
+      "request_hit_ratio": 0.6798011036322843,
+      "byte_hit_ratio": 0.662701677650286
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 50,
+      "policy": "ARC",
+      "request_hit_ratio": 0.7096113031350434,
+      "byte_hit_ratio": 0.7486798289658085
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 50,
+      "policy": "S3-FIFO",
+      "request_hit_ratio": 0.70604572190892,
+      "byte_hit_ratio": 0.7329019339280156
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 50,
+      "policy": "W-TinyLFU",
+      "request_hit_ratio": 0.6934206536898915,
+      "byte_hit_ratio": 0.61561790156183
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 50,
+      "policy": "GDSF",
+      "request_hit_ratio": 0.7721908920016979,
+      "byte_hit_ratio": 0.6570664460601572
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 1,
+      "policy": "LRU",
+      "request_hit_ratio": 0.29835686419031404,
+      "byte_hit_ratio": 0.07004485387115134
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 1,
+      "policy": "LFU",
+      "request_hit_ratio": 0.3888458231140368,
+      "byte_hit_ratio": 0.08878898065282359
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 1,
+      "policy": "ARC",
+      "request_hit_ratio": 0.33989909900751036,
+      "byte_hit_ratio": 0.08778792391357992
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 1,
+      "policy": "S3-FIFO",
+      "request_hit_ratio": 0.44755224019688833,
+      "byte_hit_ratio": 0.10010688744167529
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 1,
+      "policy": "W-TinyLFU",
+      "request_hit_ratio": 0.6131027266989448,
+      "byte_hit_ratio": 0.12000175975050775
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 1,
+      "policy": "GDSF",
+      "request_hit_ratio": 0.6281107962367573,
+      "byte_hit_ratio": 0.14524485003602683
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 5,
+      "policy": "LRU",
+      "request_hit_ratio": 0.43507304943809755,
+      "byte_hit_ratio": 0.20216404717267844
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 5,
+      "policy": "LFU",
+      "request_hit_ratio": 0.5025437047015118,
+      "byte_hit_ratio": 0.2385337708563653
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 5,
+      "policy": "ARC",
+      "request_hit_ratio": 0.46136152800193164,
+      "byte_hit_ratio": 0.22851806623338589
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 5,
+      "policy": "S3-FIFO",
+      "request_hit_ratio": 0.5548029634901068,
+      "byte_hit_ratio": 0.3157347260561012
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 5,
+      "policy": "W-TinyLFU",
+      "request_hit_ratio": 0.7228145531255162,
+      "byte_hit_ratio": 0.24240260376668477
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 5,
+      "policy": "GDSF",
+      "request_hit_ratio": 0.7618829768757969,
+      "byte_hit_ratio": 0.2466762875882632
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 10,
+      "policy": "LRU",
+      "request_hit_ratio": 0.5892329914899205,
+      "byte_hit_ratio": 0.4008621167021491
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 10,
+      "policy": "LFU",
+      "request_hit_ratio": 0.5819852333811999,
+      "byte_hit_ratio": 0.36089023157231903
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 10,
+      "policy": "ARC",
+      "request_hit_ratio": 0.6185205423746045,
+      "byte_hit_ratio": 0.43376491146015317
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 10,
+      "policy": "S3-FIFO",
+      "request_hit_ratio": 0.6791500934033117,
+      "byte_hit_ratio": 0.5091200793662206
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 10,
+      "policy": "W-TinyLFU",
+      "request_hit_ratio": 0.7748620130213959,
+      "byte_hit_ratio": 0.34016710547084905
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 10,
+      "policy": "GDSF",
+      "request_hit_ratio": 0.8213603419281325,
+      "byte_hit_ratio": 0.3488327479998241
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 25,
+      "policy": "LRU",
+      "request_hit_ratio": 0.789149966323976,
+      "byte_hit_ratio": 0.6753727339778419
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 25,
+      "policy": "LFU",
+      "request_hit_ratio": 0.661371694348782,
+      "byte_hit_ratio": 0.4999027215576459
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 25,
+      "policy": "ARC",
+      "request_hit_ratio": 0.806284496744651,
+      "byte_hit_ratio": 0.6920720893247059
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 25,
+      "policy": "S3-FIFO",
+      "request_hit_ratio": 0.820542798202251,
+      "byte_hit_ratio": 0.7148573135426545
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 25,
+      "policy": "W-TinyLFU",
+      "request_hit_ratio": 0.8315775205127227,
+      "byte_hit_ratio": 0.5167064904013948
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 25,
+      "policy": "GDSF",
+      "request_hit_ratio": 0.8827608409263237,
+      "byte_hit_ratio": 0.5454464501603761
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 50,
+      "policy": "LRU",
+      "request_hit_ratio": 0.8748649782058939,
+      "byte_hit_ratio": 0.8177429147505781
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 50,
+      "policy": "LFU",
+      "request_hit_ratio": 0.746400477818302,
+      "byte_hit_ratio": 0.6490627858461875
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 50,
+      "policy": "ARC",
+      "request_hit_ratio": 0.8659524808004304,
+      "byte_hit_ratio": 0.8097768591739242
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 50,
+      "policy": "S3-FIFO",
+      "request_hit_ratio": 0.8708323272885929,
+      "byte_hit_ratio": 0.7966112130440703
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 50,
+      "policy": "W-TinyLFU",
+      "request_hit_ratio": 0.873420509757575,
+      "byte_hit_ratio": 0.7184484103354637
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 50,
+      "policy": "GDSF",
+      "request_hit_ratio": 0.9106123953183973,
+      "byte_hit_ratio": 0.7307780095242462
+    }
+  ]
+}

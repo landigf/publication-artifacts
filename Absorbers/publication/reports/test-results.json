@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "python": "3.12.7",
+  "existing_unittest_discovery": 81,
+  "publication_boundary": 7,
+  "model_network_execution": false,
+  "joint_witness_contexts": 1541,
+  "joint_witness_richer_grid_evaluations": 10277634,
+  "finite_nonnegative_numeric_fields": 10052
+}

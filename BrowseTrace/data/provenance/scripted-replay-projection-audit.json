@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "scope": "Read-only comparison against complete historical public scripted JSON and summary snapshot; raw JSON is not bundled or republished. Private local Zurich JSON directory is incomplete (80 of 100 sessions) and was not used as corpus truth.",
+  "sources": [
+    {
+      "source": "scripted-zurich",
+      "sessions": 100,
+      "requests": 14833,
+      "positive_size_rows": 13996,
+      "zero_size_rows": 837,
+      "object_size_bytes": 365133441,
+      "summary_agrees_with_complete_json": true
+    },
+    {
+      "source": "scripted-us-central",
+      "sessions": 100,
+      "requests": 55739,
+      "positive_size_rows": 25911,
+      "zero_size_rows": 29828,
+      "object_size_bytes": 673378102,
+      "summary_agrees_with_complete_json": true
+    },
+    {
+      "source": "scripted-eu-west",
+      "sessions": 100,
+      "requests": 47390,
+      "positive_size_rows": 19765,
+      "zero_size_rows": 27625,
+      "object_size_bytes": 593154899,
+      "summary_agrees_with_complete_json": true
+    },
+    {
+      "source": "scripted-asia-southeast",
+      "sessions": 100,
+      "requests": 50105,
+      "positive_size_rows": 22783,
+      "zero_size_rows": 27322,
+      "object_size_bytes": 605083512,
+      "summary_agrees_with_complete_json": true
+    }
+  ],
+  "positive_size_multiset_equals_released_replay": true,
+  "positive_size_multiset_sha256": "b0c7205cbac54211be835e08b42b18b32cfc52a9a115bbd663a2afdb86f7ca97",
+  "interpretation": "Released scripted replay omits zero-size records: positive-size count and size multiset equal the complete400-session historical public JSON. Canonical stitched session labels/key sanitization differ from raw exports; row-level reconstruction from current collector is not asserted. No HTTP cacheability eligibility filter is inferred.",
+  "positive_timestamp_size_multiset_equals_released_replay": true
+}

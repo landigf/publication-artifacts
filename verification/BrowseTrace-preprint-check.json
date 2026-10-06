@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant": "empirical preprint",
+  "checks": [
+    {
+      "name": "no em dashes in manuscript",
+      "passed": true
+    },
+    {
+      "name": "explicit body-end marker",
+      "passed": true
+    },
+    {
+      "name": "every citation has a bibliography entry",
+      "passed": true
+    },
+    {
+      "name": "every cited source has primary-source verification",
+      "passed": true
+    },
+    {
+      "name": "direct quotations recorded in source audit",
+      "passed": true
+    },
+    {
+      "name": "AI assistance disclosure present",
+      "passed": true
+    },
+    {
+      "name": "required ACM template options",
+      "passed": true
+    },
+    {
+      "name": "LaTeX compilation",
+      "passed": true
+    },
+    {
+      "name": "no overflowing boxes or undefined citations/references",
+      "passed": true
+    },
+    {
+      "name": "body page recorded in compiled output",
+      "passed": true
+    }
+  ],
+  "entrypoint_sha256": "3fb9bef4b1c0f297ee956360e08c79738b79005abfdcaf5cb916cf7bfcdfe1f7",
+  "expanded_source_sha256": "639b973574a604ffa7d15e3b2815381b2c424ed8949c5b917b881f7f7fbfcfcc",
+  "body_end_page": 9,
+  "total_pdf_pages": 9,
+  "pdf_text_sha256": "b1a752e6bd1c89569ec4c7204538a8b34d0e500e8a617a89f236855e3eb31299",
+  "pdf_sha256": "30fe3ecc71249cdcec3fc05c98b15e1fef9276abf42c7074018e544666f83792",
+  "status": "passed",
+  "scope": "Current source-checkout compilation gate; expanded-source hash recorded. Extracted text exactly matches the approved exported release PDF, whose binary and layout were independently reviewed.",
+  "public_pdf_sha256": "bdc0c61da68b58243389ab251832c6a7765d0e5e6dabb592220ff89971bc3475",
+  "public_pdf_text_equals_gate_pdf_text": true
+}

@@ -1,0 +1,114 @@
+tasks:
+  - id: news-aggregation-1
+    name: "Aggregate today's top AI news"
+    description: "Find and summarize the 5 most important AI news stories from today"
+    category: news-aggregation
+    access_pattern: breadth-first
+    estimated_requests: 15-30
+    difficulty: easy
+    target_urls:
+      - https://techcrunch.com/category/artificial-intelligence/
+      - https://www.theverge.com/ai-artificial-intelligence
+      - https://arstechnica.com/ai/
+
+  - id: product-comparison-1
+    name: "Compare top 3 cloud GPU providers"
+    description: "Compare pricing, specs, and availability of GPU instances across AWS, GCP, Azure"
+    category: product-comparison
+    access_pattern: depth-first-multi-site
+    estimated_requests: 20-50
+    difficulty: medium
+    target_urls:
+      - https://aws.amazon.com/ec2/instance-types/
+      - https://cloud.google.com/compute/docs/gpus
+      - https://azure.microsoft.com/en-us/pricing/details/virtual-machines/
+
+  - id: literature-review-1
+    name: "Survey recent papers on LLM agents"
+    description: "Find 10 recent papers on LLM-based web agents, summarize key contributions"
+    category: literature-review
+    access_pattern: multi-page-sequential
+    estimated_requests: 30-60
+    difficulty: medium
+    target_urls:
+      - https://arxiv.org/list/cs.AI/recent
+      - https://scholar.google.com/
+
+  - id: fact-checking-1
+    name: "Verify EU AI Act provisions"
+    description: "Verify the claim: 'The EU AI Act requires all AI systems to be registered in a public database'"
+    category: fact-checking
+    access_pattern: multi-source-verification
+    estimated_requests: 10-25
+    difficulty: medium
+    target_urls:
+      - https://eur-lex.europa.eu/
+      - https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+
+  - id: travel-planning-1
+    name: "Plan a weekend trip to Zurich"
+    description: "Find flights, hotels, and top attractions for a weekend in Zurich"
+    category: travel-planning
+    access_pattern: multi-page-parallel
+    estimated_requests: 25-50
+    difficulty: medium
+    target_urls:
+      - https://www.google.com/travel/flights
+      - https://www.booking.com/
+      - https://www.zuerich.com/en
+
+  - id: regulatory-lookup-1
+    name: "GDPR compliance for AI data collection"
+    description: "Find specific GDPR articles relevant to AI training data collection"
+    category: regulatory-lookup
+    access_pattern: depth-first-single-site
+    estimated_requests: 10-20
+    difficulty: easy
+    target_urls:
+      - https://gdpr-info.eu/
+
+  - id: job-market-1
+    name: "ML engineer positions in Zurich"
+    description: "Find 10 ML engineer positions in Zurich with salary info"
+    category: job-market
+    access_pattern: breadth-first
+    estimated_requests: 20-40
+    difficulty: medium
+    target_urls:
+      - https://www.indeed.com/jobs?q=machine+learning&l=Zurich
+      - https://www.jobs.ch/en/
+      - https://www.glassdoor.com/Job/zurich-machine-learning-jobs-SRCH_IL.0,6_IC3267892_KO7,23.htm
+
+  - id: real-estate-1
+    name: "Compare apartment rents in Zurich districts"
+    description: "Find average rental prices for 2-bedroom apartments across Zurich districts"
+    category: real-estate
+    access_pattern: depth-first-multi-page
+    estimated_requests: 15-30
+    difficulty: medium
+    target_urls:
+      - https://www.homegate.ch/
+      - https://www.immoscout24.ch/
+
+  - id: api-integration-1
+    name: "Compare weather API providers"
+    description: "Find and compare 5 weather API providers: pricing, rate limits, data quality"
+    category: api-integration
+    access_pattern: multi-site-comparison
+    estimated_requests: 15-25
+    difficulty: easy
+    target_urls:
+      - https://openweathermap.org/api
+      - https://www.weatherapi.com/
+      - https://open-meteo.com/
+
+  - id: documentation-lookup-1
+    name: "Look up Python asyncio documentation"
+    description: "Find and summarize the key asyncio patterns: event loops, tasks, coroutines, and synchronization primitives"
+    category: documentation-lookup
+    access_pattern: depth-first-single-site
+    estimated_requests: 10-25
+    difficulty: easy
+    target_urls:
+      - https://docs.python.org/3/library/asyncio.html
+      - https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API

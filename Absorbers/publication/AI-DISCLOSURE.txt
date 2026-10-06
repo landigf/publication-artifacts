@@ -1,0 +1,11 @@
+AI tools assisted substantially with literature checking, code inspection and
+revision, analysis of frozen model-call records, generation of tables and
+figures, manuscript rewriting, and automated technical and skeptical reviews.
+The empirical results were recomputed offline from previously collected
+records. No new live-model calls or human observations were collected for
+this publication preparation. AI tools are not authors.
+
+On 6 October 2026, the human author approved the prepared final manuscripts
+and this disclosure, confirmed that it accurately describes the assistance,
+and accepted responsibility for the work. This approval does not assert
+submission, peer review, acceptance, or an assigned external identifier.

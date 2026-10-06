@@ -1,0 +1,44 @@
+{
+  "hashed_files": 53718,
+  "raw_cache_files": 53632,
+  "prompt_storing_cache_records": 43950,
+  "credential_fields": 0,
+  "raw_top_level_field_names": [
+    "cache_id",
+    "cache_schema_version",
+    "cache_source",
+    "cached",
+    "call_spec",
+    "created",
+    "error",
+    "finish_reason",
+    "latency_ms",
+    "model",
+    "requested_cache_id",
+    "resolved_model",
+    "response_id",
+    "system_fingerprint",
+    "text",
+    "tokens_in",
+    "tokens_out"
+  ],
+  "six_sweeps_present": true,
+  "status": "passed",
+  "python": "3.12.7",
+  "test_counts": {
+    "existing_unittest_discovery": 81,
+    "publication_boundary": 7
+  },
+  "checks": [
+    "all six decision files byte-identical",
+    "all six analysis JSON values identical",
+    "three chain metadata values identical",
+    "three main metrics metadata values identical",
+    "E8 cone/equality/safety/denominator invariants",
+    "generated macros/tables/JSON byte-identical",
+    "all six PDF/PNG files byte-identical",
+    "existing offline unittest discovery",
+    "publication missing-sweep/denominator/certificate/relative-interpreter tests",
+    "joint witness richer-grid equality and finite nonnegative recorded numeric domain"
+  ]
+}

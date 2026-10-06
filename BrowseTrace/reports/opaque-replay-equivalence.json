@@ -1,0 +1,430 @@
+{
+  "schema_version": 1,
+  "implementation": "libcachesim 0.3.3.post4",
+  "comparison": "All 60 policy/capacity/workload results, source sanitized URL keys versus full-key opaque export",
+  "comparisons": [
+    {
+      "workload": "scripted",
+      "cache_mib": 1,
+      "policy": "LRU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 1,
+      "policy": "LFU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 1,
+      "policy": "ARC",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 1,
+      "policy": "S3-FIFO",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 1,
+      "policy": "W-TinyLFU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 1,
+      "policy": "GDSF",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 5,
+      "policy": "LRU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 5,
+      "policy": "LFU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 5,
+      "policy": "ARC",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 5,
+      "policy": "S3-FIFO",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 5,
+      "policy": "W-TinyLFU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 5,
+      "policy": "GDSF",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 10,
+      "policy": "LRU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 10,
+      "policy": "LFU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 10,
+      "policy": "ARC",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 10,
+      "policy": "S3-FIFO",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 10,
+      "policy": "W-TinyLFU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 10,
+      "policy": "GDSF",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 25,
+      "policy": "LRU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 25,
+      "policy": "LFU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 25,
+      "policy": "ARC",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 25,
+      "policy": "S3-FIFO",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 25,
+      "policy": "W-TinyLFU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 25,
+      "policy": "GDSF",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 50,
+      "policy": "LRU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 50,
+      "policy": "LFU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 50,
+      "policy": "ARC",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 50,
+      "policy": "S3-FIFO",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 50,
+      "policy": "W-TinyLFU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "scripted",
+      "cache_mib": 50,
+      "policy": "GDSF",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 1,
+      "policy": "LRU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 1,
+      "policy": "LFU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 1,
+      "policy": "ARC",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 1,
+      "policy": "S3-FIFO",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 1,
+      "policy": "W-TinyLFU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 1,
+      "policy": "GDSF",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 5,
+      "policy": "LRU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 5,
+      "policy": "LFU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 5,
+      "policy": "ARC",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 5,
+      "policy": "S3-FIFO",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 5,
+      "policy": "W-TinyLFU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 5,
+      "policy": "GDSF",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 10,
+      "policy": "LRU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 10,
+      "policy": "LFU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 10,
+      "policy": "ARC",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 10,
+      "policy": "S3-FIFO",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 10,
+      "policy": "W-TinyLFU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 10,
+      "policy": "GDSF",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 25,
+      "policy": "LRU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 25,
+      "policy": "LFU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 25,
+      "policy": "ARC",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 25,
+      "policy": "S3-FIFO",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 25,
+      "policy": "W-TinyLFU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 25,
+      "policy": "GDSF",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 50,
+      "policy": "LRU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 50,
+      "policy": "LFU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 50,
+      "policy": "ARC",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 50,
+      "policy": "S3-FIFO",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 50,
+      "policy": "W-TinyLFU",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    },
+    {
+      "workload": "llm",
+      "cache_mib": 50,
+      "policy": "GDSF",
+      "request_hit_delta": 0.0,
+      "byte_hit_delta": 0.0
+    }
+  ],
+  "all_results_equal": true,
+  "max_absolute_request_delta": 0.0,
+  "max_absolute_byte_delta": 0.0
+}
