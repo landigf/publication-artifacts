@@ -3,7 +3,7 @@
   "prepared_date": "2026-10-06",
   "github_repository": "https://github.com/landigf/publication-artifacts",
   "release_tag": "v2026-10-06",
-  "public_release_status": "publication in progress",
+  "public_release_status": "published and server checksums verified",
   "papers": {
     "BrowseTrace": {
       "arxiv_identifier": null,
@@ -27,5 +27,10 @@
     "Absorbers-arxiv-source.zip": "fda98aae698c35cbb4a2c9dab055ecfb2678212bf3f428fee1d74d9177fd8cce",
     "Absorbers-artifact.zip": "8475092c648efbaf3fd5b5fb4caea086df8bbd1e2da8906b356317ffb8c3e04e"
   },
-  "authority": "Author approved sole authorship, publication and redistribution authority, AI disclosure and responsibility, manuscript distribution choice and scoped artifact licenses. Author representation, not independent legal clearance."
+  "authority": "Author approved sole authorship, publication and redistribution authority, AI disclosure and responsibility, manuscript distribution choice and scoped artifact licenses. Author representation, not independent legal clearance.",
+  "github_release": "https://github.com/landigf/publication-artifacts/releases/tag/v2026-10-06",
+  "github_release_id": 404567907,
+  "published_at": "2026-10-06T10:12:15Z",
+  "public_repository_commit": "3fc593114a9c8c3e4a8216c08d004113efcf46dd",
+  "archive_metadata_scope": "The immutable archives retain preparation-time metadata. This execution receipt records the subsequent public GitHub release. arXiv and venue submissions remain unperformed."
 }
