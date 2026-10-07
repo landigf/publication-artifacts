@@ -1,6 +1,6 @@
 # WebTrace anonymous reviewer artifact
 
-[Download the artifact ZIP](WebTrace-WebConf2027-anonymous-artifact.zip).
+[Download the artifact ZIP](https://anonymous.4open.science/api/repo/WebTrace-WebConf2027-753/file/WebTrace-WebConf2027-anonymous-artifact.zip?download=true&v=7ac485caa668de737b79bd9a588f31dadbf926264ebafe40866189342b48a4cf).
 
 The ZIP contains the fixed inputs, replay code, reports, figures, and pinned
 dependency list used by the accompanying anonymous manuscript. It preserves the
